@@ -69,8 +69,8 @@ Customizing your game's appearance for better clarity and FPS.
 Keeping your account safe and your tools running smoothly.
 
 <Deck>
-  <Card title="Anti-Ratting Guide" href="/guides/tech/security">
-    How to spot session stealers and protect your Microsoft account
+  <Card title="Hypixel Safety Guide" href="/guides/tech/security">
+    How to stay safe on Hypixel and protect you and your account from threats
   </Card>
   <Card title="Discord Bot Setup" href="/guides/tech/discord">
     Integrating SkyBlock trackers and bridge bots into your server
