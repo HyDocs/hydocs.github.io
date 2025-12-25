@@ -1,9 +1,6 @@
 ---
 title: Glossary
 description: Hypixel glossay and skyblock-related terminology
-#TODO: CHANGE IMAGE
-og:
-  image: glossary.png
 ---
 
 <script setup>

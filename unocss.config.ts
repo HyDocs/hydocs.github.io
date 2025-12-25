@@ -80,13 +80,10 @@ export default defineConfig({
     }),
     presetAttributify(),
     presetWebFonts({
+      provider: "none",
       fonts: {
         serif: "Source Serif 4 Variable",
-        pacifico: {
-          name: "Pacifico",
-          weights: [400],
-          italic: true,
-        },
+        pacifico: "Pacifico",
       },
     }),
     presetIcons({

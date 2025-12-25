@@ -135,6 +135,9 @@ importers:
       '@iconify-json/akar-icons':
         specifier: ^1.2.7
         version: 1.2.7
+      '@iconify-json/carbon':
+        specifier: ^1.2.15
+        version: 1.2.15
       '@iconify-json/ic':
         specifier: ^1.2.4
         version: 1.2.4
@@ -750,8 +753,8 @@ packages:
   '@iconify-json/akar-icons@1.2.7':
     resolution: {integrity: sha512-cw44dCnZgGhm6Tywxm0WALAnDB9AyGkDk7kiLMo2B/Ayt7duZu/uyrsqb55weWUN8Ge2sQAOl8MRtT6bFcLzPg==}
 
-  '@iconify-json/carbon@1.2.14':
-    resolution: {integrity: sha512-33u6uGiYJ79Dfp72peT+PBMcjxzi+NyJLpqYRX8pnw0zchsUW7Us2xecgvkWgD83KYcbe6hufyWlHFU9y7fb/Q==}
+  '@iconify-json/carbon@1.2.15':
+    resolution: {integrity: sha512-9tW0nZY5QtKkMhuYzW09BM1345SyXNuA+gx2ub0j/fnfHOD5XVimMJ/D76H3tTez25NJbPYCLIQoFhvJc1HVBQ==}
 
   '@iconify-json/ic@1.2.4':
     resolution: {integrity: sha512-pzPMmrZrBQuwT7nmtrYdkttun8KalRGgZPIL1Ny9KpF2zjRGIUPN+npTfuD3lrgO/OnSwAoJWuekQwBpt/Cqrw==}
@@ -4473,7 +4476,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/carbon@1.2.14':
+  '@iconify-json/carbon@1.2.15':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -4676,7 +4679,7 @@ snapshots:
 
   '@nolebase/vitepress-plugin-enhanced-readabilities@2.18.2(vitepress@2.0.0-alpha.12(@types/node@22.19.0)(change-case@5.4.4)(esbuild@0.25.12)(jiti@2.6.1)(less@4.4.2)(oxc-minify@0.96.0)(postcss@8.5.6)(sass@1.93.3)(terser@5.44.1)(typescript@5.6.3))(vue@3.5.24(typescript@5.6.3))':
     dependencies:
-      '@iconify-json/carbon': 1.2.14
+      '@iconify-json/carbon': 1.2.15
       '@iconify-json/icon-park-outline': 1.2.4
       '@nolebase/ui': 2.18.2(vitepress@2.0.0-alpha.12(@types/node@22.19.0)(change-case@5.4.4)(esbuild@0.25.12)(jiti@2.6.1)(less@4.4.2)(oxc-minify@0.96.0)(postcss@8.5.6)(sass@1.93.3)(terser@5.44.1)(typescript@5.6.3))(vue@3.5.24(typescript@5.6.3))
       less: 4.4.2

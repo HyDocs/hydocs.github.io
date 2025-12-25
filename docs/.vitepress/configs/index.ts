@@ -28,6 +28,25 @@ const GIT_COMMIT =
 
 export const shared: UserConfig<DefaultTheme.Config> = {
   ...siteConfig,
+  head: [
+    [
+      "style",
+      {},
+      `
+      @font-face {
+        font-family: 'Pacifico';
+        src: url('/fonts/Pacifico-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Source Serif 4 Variable';
+        src: url('/fonts/SourceSerif4-VariableFont_opsz,wght.ttf') format('truetype');
+        font-display: swap;
+      }
+    `,
+    ],
+  ],
   transformHead: async (context) => generateMeta(context, hostname),
   buildEnd: async (context) => {
     generateImages(context);
@@ -86,6 +105,9 @@ export const shared: UserConfig<DefaultTheme.Config> = {
     },
   },
   vite: {
+    build: {
+      cssTarget: "chrome100",
+    },
     experimental: {
       enableNativePlugin: true,
     },
