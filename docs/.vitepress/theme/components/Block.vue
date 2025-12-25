@@ -1,0 +1,50 @@
+<script setup lang="ts">
+withDefaults(
+  defineProps<{
+    text?: string;
+    type?: "info" | "tip" | "warning" | "danger";
+    link: string;
+    icon?: string;
+  }>(),
+  { icon: "i-octicon-link-external-16", type: "tip" }
+);
+</script>
+
+<template>
+  <component
+    :target="link ? '_blank' : undefined"
+    :is="link ? 'a' : 'span'"
+    :href="link"
+    :class="type"
+    class="VButton inline-flex items-center px4 py3 gap2 rounded-md align-middle cursor-pointer"
+  >
+    <div :class="icon" />
+    <slot>{{ text }}</slot>
+  </component>
+</template>
+
+<style scoped>
+.VButton {
+  text-decoration: none !important;
+}
+
+.VButton.info {
+  color: var(--vp-badge-info-text);
+  background-color: var(--vp-badge-info-bg);
+}
+
+.VButton.tip {
+  color: var(--vp-badge-tip-text);
+  background-color: var(--vp-badge-tip-bg);
+}
+
+.VButton.warning {
+  color: var(--vp-badge-warning-text);
+  background-color: var(--vp-badge-warning-bg);
+}
+
+.VButton.danger {
+  color: var(--vp-badge-danger-text);
+  background-color: var(--vp-badge-danger-bg);
+}
+</style>

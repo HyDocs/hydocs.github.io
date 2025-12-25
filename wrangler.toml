@@ -1,0 +1,5 @@
+name = "hydocs"
+main = ".output/server/index.mjs"
+workers_dev = true
+account_id = "76df71ed1fc90a033bb7d881434f2e0c"
+compatibility_date = "2022-09-10"
