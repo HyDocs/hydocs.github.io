@@ -1,6 +1,7 @@
 ---
-title: Guides
-description: Comprehensive Tutorials & Guides for Hypixel and Minecraft
+title: Safety Guide
+description: Guide to help users protect themselves from threat within Hypixel.
+customDescription: Guide to help users protect themselves from threat within Hypixel.
 ---
 
 This guide explores the how you (yes, you!) can use to protect yourself from threats and malware and have a safe experience on hypixel!
