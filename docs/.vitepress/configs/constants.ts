@@ -14,7 +14,7 @@ export const sidebar: DefaultTheme.Sidebar = [
   },
   {
     text: '<span class="i-lucide:alert-circle"></span> Safety Guide',
-    link: "/safety",
+    link: "/safety-guide",
   },
   {
     text: '<span class="i-lucide:globe"></span> Websites',
@@ -98,14 +98,57 @@ export const sidebar: DefaultTheme.Sidebar = [
 
   // --- GUIDES & KNOWLEDGE ---
   {
-    text: '<span class="i-lucide:book-open"></span> Tutorials',
+    text: '<span class="i-lucide:book-open"></span> Guides',
     collapsed: true,
-    link: "/tutorials",
+    link: "/guides",
     items: [
-      { text: "Installation Guide", link: "/tutorials/installation" },
-      { text: "Optimizing FPS", link: "/tutorials/fps" },
-      { text: "Avoid Being Ratted", link: "/tutorials/security" },
-      { text: "Texture Packs", link: "/tutorials/resource-packs" },
+      { text: "Modding & Loaders",
+        link: "/guides/mod",
+        collapsed: true,
+        items: [
+          { text: "Fabric Installaion", link: "/guides/modding/fabric" },
+          { text: "Forge 1.8.9 Setup", link: "/guides/modding/forge" },
+          { text: "Performance Optimation", link: "/guides/modding/performance" },
+          { text: "Mod Compatibility", link: "/guides/modding/compatibility" },
+        ] 
+      },
+      { text: "Skyblock",
+        link: "/guides/skyblock",
+        collapsed: true,
+        items: [
+          { text: "Bazaar", link: "/guides/skyblock/bazaar" },
+          { text: "Garden", link: "/guides/skyblock/garden" },
+          { text: "Dungeons", link: "/guides/skyblock/dungeons" },
+          { text: "Mining", link: "/guides/skyblock/mining" },
+        ] 
+      },
+      { text: "Customization",
+        link: "/guides/customization",
+        collapsed: true,
+        items: [
+          { text: "Texture Pack Installation", link: "/guides/customization/texturepacks" },
+          { text: "Shaders for Low-End PCs", link: "/guides/customization/shaders" },
+          { text: "Custom GUI & HUD", link: "/guides/customization/gui" },
+        ] 
+      },
+      { text: "Technical",
+        link: "/guides/technical",
+        collapsed: true,
+        items: [
+          { text: "Anti-Ratting Guide", link: "/guides/technical/security" },
+          { text: "Discord Bot", link: "/guides/technical/discord" },
+          { text: "Mobile (Pojav Launcher)", link: "/guides/technical/pojav" },
+          { text: "User Scripts", link: "/guides/technical/scripts" },
+        ] 
+      },
+      { text: "Troubleshoot",
+        link: "/guides/troubleshoot",
+        collapsed: true,
+        items: [
+          { text: "Connection Issues", link: "/guides/troubleshoot/connection" },
+          { text: "Mod Crashes", link: "/guides/troubleshoot/crashes" },
+        ]
+      },
     ],
   },
   {
