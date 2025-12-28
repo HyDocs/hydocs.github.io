@@ -45,4 +45,4 @@ Most mods listed here are "Quality of Life" (QoL) and fall under the "Use at you
 
 ### Why is my game lagging?
 
-Lag can be either "Server Lag" (Hypixel's end) or "Client Lag" (your PC). Check our [Performance Guide](/guides/modding/performance) to optimize your FPS and network settings.
+Lag can be either "Server Lag" (Hypixel's end) or "Client Lag" (your PC). Check our [Guides](/guides) to optimize your FPS and network settings.
