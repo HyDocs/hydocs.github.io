@@ -70,21 +70,14 @@ In 2025, never trust a `.jar` from a direct download link without checking it. U
 
 ### Mod Loaders & Clients
 
-::: details Symbols
-
-- **Performance Focused** -> :n:
-- **SkyBlock Optimized** -> :s:
-- **PvP Focused** -> :pvp:
-- **API Required** -> :api:
-  :::
-
-| Loader / Client                                                                           | Type     | Version | Focus                                                    |
-| ----------------------------------------------------------------------------------------- | -------- | ------- | -------------------------------------------------------- |
-| [Forge 1.8.9](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.8.9.html) | :frg:    | 1.8.9   | The industry standard for SkyBlock & competitive mods.   |
-| [Lunar Client](https://www.lunarclient.com/)                                              | :pvp:    | All     | Best-in-class performance for Bedwars and Skywars.       |
-| [Badlion Client](https://www.badlion.net/)                                                | :s::pvp: | All     | Built-in SkyBlock overlays and official Hypixel partner. |
-| [Fabric Loader](https://fabricmc.net/)                                                    | :fab:    | 1.21.x  | Modern performance (Sodium/Iris) for 1.21+ players.      |
-| [Prism Launcher](https://prismlauncher.org/)                                              | :n:      | All     | FOSS launcher for managing multiple modded instances.    |
+| Client                                      | Platforms         | Source                        |
+| ------------------------------------------- | ----------------- | ----------------------------- |
+| [Lunar Client](https://www.lunarclient.com) | :win: :app: :lin: | Closed Source                 |
+| [Badlion Client](https://www.badlion.net)   | :win: :app:       | Closed Source                 |
+| [Feather Client](https://feathermc.com)     | :win: :app: :lin: | Closed Source                 |
+| [Labymod](https://www.labymod.net)          | :win: :app:       | Closed Source (API available) |
+| [Salwyrr Client](https://www.salwyrr.com)   | :win:             | Closed Source                 |
+| [Prism Launcher](https://prismlauncher.org/)| :win: :app: :lin: | Open Source                   |
 
 :::details Essential Mods
 
