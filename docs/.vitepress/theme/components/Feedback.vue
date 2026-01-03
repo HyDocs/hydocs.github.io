@@ -78,7 +78,6 @@ async function handleSubmit(type?: FeedbackType["type"]) {
   };
 
   try {
-    //TODO: Replace with your own endpoint
     const response = await fetch("https://hydocs.pixelman.workers.dev", {
       method: "POST",
       headers: {
