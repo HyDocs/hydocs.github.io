@@ -88,7 +88,7 @@ export const sidebar: DefaultTheme.Sidebar = [
         text: "Discord Bots",
         collapsed: true,
         link: "/discord-bots",
-      }
+      },
     ],
   },
 
@@ -105,24 +105,28 @@ export const sidebar: DefaultTheme.Sidebar = [
     ],
   },
 
-
   // --- GUIDES & KNOWLEDGE ---
   {
     text: '<span class="i-lucide:book-open"></span> Guides',
     collapsed: true,
     link: "/guides",
     items: [
-      { text: "Modding & Loaders",
+      {
+        text: "Modding & Loaders",
         link: "/guides/mod",
         collapsed: true,
         items: [
           { text: "Fabric Installaion", link: "/guides/modding/fabric" },
           { text: "Forge 1.8.9 Setup", link: "/guides/modding/forge" },
-          { text: "Performance Optimation", link: "/guides/modding/performance" },
+          {
+            text: "Performance Optimation",
+            link: "/guides/modding/performance",
+          },
           { text: "Mod Compatibility", link: "/guides/modding/compatibility" },
-        ] 
+        ],
       },
-      { text: "Skyblock",
+      {
+        text: "Skyblock",
         link: "/guides/skyblock",
         collapsed: true,
         items: [
@@ -130,18 +134,26 @@ export const sidebar: DefaultTheme.Sidebar = [
           { text: "Garden", link: "/guides/skyblock/garden" },
           { text: "Dungeons", link: "/guides/skyblock/dungeons" },
           { text: "Mining", link: "/guides/skyblock/mining" },
-        ] 
+        ],
       },
-      { text: "Customization",
+      {
+        text: "Customization",
         link: "/guides/customization",
         collapsed: true,
         items: [
-          { text: "Texture Pack Installation", link: "/guides/customization/texturepacks" },
-          { text: "Shaders for Low-End PCs", link: "/guides/customization/shaders" },
+          {
+            text: "Texture Pack Installation",
+            link: "/guides/customization/texturepacks",
+          },
+          {
+            text: "Shaders for Low-End PCs",
+            link: "/guides/customization/shaders",
+          },
           { text: "Custom GUI & HUD", link: "/guides/customization/gui" },
-        ] 
+        ],
       },
-      { text: "Technical",
+      {
+        text: "Technical",
         link: "/guides/technical",
         collapsed: true,
         items: [
@@ -149,15 +161,19 @@ export const sidebar: DefaultTheme.Sidebar = [
           { text: "Discord Bot", link: "/guides/technical/discord" },
           { text: "Mobile (Pojav Launcher)", link: "/guides/technical/pojav" },
           { text: "User Scripts", link: "/guides/technical/scripts" },
-        ] 
+        ],
       },
-      { text: "Troubleshoot",
+      {
+        text: "Troubleshoot",
         link: "/guides/troubleshoot",
         collapsed: true,
         items: [
-          { text: "Connection Issues", link: "/guides/troubleshoot/connection" },
+          {
+            text: "Connection Issues",
+            link: "/guides/troubleshoot/connection",
+          },
           { text: "Mod Crashes", link: "/guides/troubleshoot/crashes" },
-        ]
+        ],
       },
     ],
   },
@@ -189,19 +205,19 @@ export const siteConfig = {
   appearance: true,
   titleTemplate: ":title • hydocs.github.io by as280093",
   head: [
-    ["meta", { name: "theme-color", content: "#5241ecff" }],
+    ["meta", { name: "theme-color", content: "#7378eb" }],
     ["meta", { name: "og:type", content: "website" }],
     ["meta", { name: "og:locale", content: "en" }],
-    ["link", { rel: "icon", href: "/asset/logosmall.webp" }],
+    ["link", { rel: "icon", href: "/asset/logosmall.png" }],
     // PWA
     [
       "link",
-      { rel: "icon", href: "/asset/logosmall.webp", type: "image/svg+xml" },
+      { rel: "icon", href: "/asset/logosmall.png", type: "image/svg+xml" },
     ],
-    ["link", { rel: "alternate icon", href: "/asset/logosmall.webp" }],
+    ["link", { rel: "alternate icon", href: "/asset/logosmall.png" }],
     [
       "link",
-      { rel: "mask-icon", href: "/asset/logosmall.webp", color: "#5241ecff" },
+      { rel: "mask-icon", href: "/asset/logosmall.png", color: "#7378eb" },
     ],
     // prettier-ignore
     [

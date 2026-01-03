@@ -101,8 +101,9 @@ async function generateImage({
         frontmatter.layout === "home"
           ? frontmatter.hero.tagline ?? frontmatter.description
           : frontmatter.description,
-      // TODO: TESTing
-      image: frontmatter.og?.image ?? "../OG/default2.png",
+      image:
+        frontmatter.og?.image ??
+        "https://cdn.imgchest.com/files/e2c8cc54a3f5.png",
     },
   };
 
