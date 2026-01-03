@@ -21,7 +21,7 @@ Open PowerShell as **Administrator** and run these commands to set up your envir
 
 ```bash
 # Download and install Chocolatey (Windows Package Manager):
-powershell -c "irm [https://community.chocolatey.org/install.ps1](https://community.chocolatey.org/install.ps1)|iex"
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
 # Install Git for version control:
 choco install git -y

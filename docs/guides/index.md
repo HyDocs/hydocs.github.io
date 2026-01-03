@@ -34,16 +34,16 @@ Essential tutorials for setting up your game for Hypixel.
 Master the mechanics of the Hypixel SkyBlock economy and progression.
 
 <Deck>
-  <Card title="Bazaar Flipping" href="/guides/sb/bazaar">
+  <Card title="Bazaar Flipping" href="/guides/skyblock/bazaar">
     Beginner to advanced guide on high-margin Bazaar flipping
   </Card>
-  <Card title="Garden Optimization" href="/guides/sb/garden">
+  <Card title="Garden Optimization" href="/guides/skyblock/garden">
     Best farming layouts and gear for maximum Jacob's Contest medals
   </Card>
-  <Card title="Dungeon Secrets" href="/guides/sb/dungeons">
+  <Card title="Dungeon Secrets" href="/guides/skyblock/dungeons">
     How to find secrets and maximize your Catacombs score
   </Card>
-  <Card title="Mining Routes" href="/guides/sb/mining">
+  <Card title="Mining Routes" href="/guides/skyblock/mining">
     Efficient gemstone mining paths in the Crystal Hollows
   </Card>
 </Deck>
@@ -53,13 +53,13 @@ Master the mechanics of the Hypixel SkyBlock economy and progression.
 Customizing your game's appearance for better clarity and FPS.
 
 <Deck>
-  <Card title="Texture Pack Installation" href="/guides/visuals/texturepacks">
+  <Card title="Texture Pack Installation" href="/guides/customization/texturepacks">
     How to install and layer Resource Packs for SkyBlock and PvP
   </Card>
-  <Card title="Shaders for Low-End PCs" href="/guides/visuals/shaders">
+  <Card title="Shaders for Low-End PCs" href="/guides/customization/shaders">
     Installing Iris/Optifine and finding lightweight shaders
   </Card>
-  <Card title="Custom GUI & HUD" href="/guides/visuals/gui">
+  <Card title="Custom GUI & HUD" href="/guides/customization/gui">
     Using mods to customize your health bars, inventory, and crosshairs
   </Card>
 </Deck>
@@ -69,16 +69,16 @@ Customizing your game's appearance for better clarity and FPS.
 Keeping your account safe and your tools running smoothly.
 
 <Deck>
-  <Card title="Anti-Ratting Guide" href="/guides/tech/security">
+  <Card title="Anti-Ratting Guide" href="/guides/technical/security">
     How to spot session stealers and protect your Microsoft account
   </Card>
-  <Card title="Discord Bot Setup" href="/guides/tech/discord">
+  <Card title="Discord Bot Setup" href="/guides/technical/discord">
     Integrating SkyBlock trackers and bridge bots into your server
   </Card>
-  <Card title="Mobile (PojavLauncher)" href="/guides/tech/pojav">
+  <Card title="Mobile (PojavLauncher)" href="/guides/technical/pojav">
     How to play Hypixel on Android and iOS devices using PojavLauncher
   </Card>
-  <Card title="User Scripts" href="/guides/tech/scripts">
+  <Card title="User Scripts" href="/guides/technical/scripts">
     Enhance the Hypixel Forums and Wiki with custom browser scripts
   </Card>
 </Deck>
@@ -88,10 +88,10 @@ Keeping your account safe and your tools running smoothly.
 Common fixes for client and server-side issues.
 
 <Deck>
-  <Card title="Connection Issues" href="/guides/fix/connection">
+  <Card title="Connection Issues" href="/guides/troubleshoot/connection">
     Fixing lag spikes, high ping, and 'Internal Exception' errors
   </Card>
-  <Card title="Mod Crashes" href="/guides/fix/crashes">
+  <Card title="Mod Crashes" href="/guides/troubleshoot/crashes">
     How to read crash reports and identify the mod causing the issue
   </Card>
 </Deck>
