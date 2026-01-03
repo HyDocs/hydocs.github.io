@@ -1,160 +1,123 @@
 ---
-title: Websites
-description: The ultimate directory for Hypixel mods, texture packs, and trackers.
+title: Hypixel Directory
+description: The ultimate directory for Hypixel mods, texture packs, and trackers across all game modes.
+customDescription: Explore resources for Skyblock, Bedwars, PvP, and network-wide security.
+outline: 1
 ---
 
-# Client & Mods
 
-## Mod Loaders
+## Trackers & Stats
+
+### Network & PvP Stats
 
 ::: details Symbols
 
-- **Performance Focused** -> :n:
-- **SkyBlock Optimized** -> :s:
-- **PvP Focused** -> :pvp:
-- **API Required** -> :api:
+- Bedwars Specialist -> :bw:
+- Skywars Specialist -> :sw:
+- Leaderboard Tracker -> :trophy:
   :::
 
-| Loader                                                                                    | Type    | Version | Focus                                    |
-| ----------------------------------------------------------------------------------------- | ------- | ------- | ---------------------------------------- |
-| [Forge 1.8.9](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.8.9.html) | :frg:   | 1.8.9   | The "Standard" for Hypixel & SkyBlock.   |
-| [Fabric Loader](https://fabricmc.net/)                                                    | :fab:   | 1.21.x  | Modern performance (Sodium/Lithium).     |
-| [Quilt](https://quiltmc.org/en/)                                                          | :quilt: | 1.21.x  | Fabric alternative with better toolsets. |
+| Tracker                               | Focus    | Description                                          |
+| ------------------------------------- | -------- | ---------------------------------------------------- |
+| [Plancke](https://plancke.io/)        | Global   | General Hypixel stats, guild info, and wall art.     |
+| [Nadeshiko](https://nadeshiko.io/)    | :bw:     | The most detailed Bedwars tracker (FKDR/Winstreaks). |
+| [BwStats](https://bwstats.me/)        | :bw:     | Map-specific analysis and session tracking.          |
+| [Skywars.info](https://skywars.info/) | :sw:     | Deep dive into Skywars K/D and kit usage.            |
+| [Skydash](https://skydash.net/)       | Global   | Mobile-responsive stats viewer for all games.        |
+| [HyStats](https://hystats.net/)       | :trophy: | Long-term growth and historical leaderboards.        |
+
+### SkyBlock Economy & Progress
+
+| Resource                                     | Category | Features                                             |
+| -------------------------------------------- | -------- | ---------------------------------------------------- |
+| [SkyCrypt](https://sky.shiiyu.moe/)          | Stats    | The standard for SkyBlock profile viewing.           |
+| [Coflnet](https://sky.coflnet.com/)          | Economy  | Auction House history and real-time flipping.        |
+| [Bazaar Tracker](https://bazaartracker.com/) | Economy  | Bazaar trends, margin analysis, and price history.   |
+| [Skyblock.bz](https://www.skyblock.bz/)      | Economy  | Simple, fast Bazaar prices and flipping tools.       |
+| [Mathemaniac](https://mathemaniac.org/)      | Progress | Scientific weight and skill progression calculators. |
+| [Adjectils](https://adjectils.com/)          | Progress | Modern weight calculation (Lily Weight).             |
+
+
+## Security & Verification
+
+::: danger Mod Safety
+In 2025, never trust a `.jar` from a direct download link without checking it. Use these scanners to prevent account RATting.
+:::
+
+- [IsThisARat](https://isthisarat.com/) -> Database of known malicious mods.
+- [RatRater 2](https://ktibow.github.io/RatRater2/) -> Web scanner for malicious webhooks.
+- [VirusTotal](https://www.virustotal.com/) -> Scans files against 70+ antivirus engines.
+- [Coflnet Mod Check](https://sky.coflnet.com/mod) -> Database of safe mod versions.
+
+
+
+## Texture Packs
+
+### Specialized Packs
+
+| Pack Name                                                    | Type  | Focus                                     |
+| ------------------------------------------------------------ | ----- | ----------------------------------------- |
+| [FurfSky Reborn](https://furfsky.net/)                       | :s:   | Custom SkyBlock item textures (CIT).      |
+| [Tightfault Revamp](https://packs.gg/pack/tightfault-revamp) | :pvp: | High-FPS, short-sword PvP standard.       |
+| [Looshy Prism](https://looshy.moe/)                          | :pvp: | Aesthetic, modern competitive pack.       |
+| [Vanilla Tweaks](https://vanillatweaks.net/)                 | :mc:  | Modular QoL textures for modern versions. |
+
+
+
+## Client & Mods
+
+### Mod Loaders & Clients
+
+| Client                                      | Platforms         | Source                        |
+| ------------------------------------------- | ----------------- | ----------------------------- |
+| [Lunar Client](https://www.lunarclient.com) ==LunarClient== | :win: :app: :lin: | Closed Source                 |
+| [Badlion Client](https://www.badlion.net)  ==Badlion Client== | :win: :app:       | Closed Source                 |
+| [Feather Client](https://feathermc.com)    ==Feather Client== | :win: :app: :lin: | Closed Source                 |
+| [Labymod](https://www.labymod.net)         ==Labymod== | :win: :app:       | Closed Source (API available) |
+| [Prism Launcher](https://prismlauncher.org/)| :win: :app: :lin: | Open Source                   |
 
 :::details Essential Mods
 
 ### SkyBlock (1.8.9)
 
-| Mod Name                                                                | Source | Type     |
-| ----------------------------------------------------------------------- | ------ | -------- |
-| [NotEnoughUpdates (NEU)](https://github.com/Moulberry/NotEnoughUpdates) | :gh:   | :s::api: |
-| [Skytils](https://github.com/Skytils/SkytilsMod)                        | :gh:   | :s::api: |
-| [SkyBlock Addons (SBA)](https://skyblockaddons.com/)                    | :gh:   | :s:      |
-| [DungeonGuide](https://github.com/Desperat-e/DungeonGuide)              | :gh:   | :s:      |
+| Mod Name                                                                | Source | Type                             |
+| ----------------------------------------------------------------------- | ------ | -------------------------------- |
+| [NotEnoughUpdates (NEU)](https://github.com/Moulberry/NotEnoughUpdates) | :gh:   | :s::api: (Item prices/overlays)  |
+| [Skytils](https://github.com/Skytils/SkytilsMod)                        | :gh:   | :s::api: (Solvers/QoL)           |
+| [SkyHanni](https://github.com/hannibal002/SkyHanni)                     | :gh:   | :s: (Ironman & farming features) |
+| [SkyBlock Addons (SBA)](https://skyblockaddons.com/)                    | :gh:   | :s: (Classic QoL)                |
+| [DungeonGuide](https://github.com/Desperat-e/DungeonGuide)              | :gh:   | :s: (Advanced Dungeon solvers)   |
 
-### Performance & QoL
+### Competitive & PvP
 
-| Mod Name                                   | Source | Type                               |
-| ------------------------------------------ | ------ | ---------------------------------- |
-| [Patcher](https://sk1er.club/mods/patcher) | :e:    | :mc: Essential bug fixes for 1.8.9 |
-| [OptiFine](https://optifine.net/home)      | :e:    | Legacy performance & shaders       |
-| [Sodium](https://modrinth.com/mod/sodium)  | :mr:   | :fab: Modern FPS king              |
-| [Essential](https://essential.gg/)         | :e:    | Social, cosmetics, and hosting     |
+| Mod Name                                               | Source | Type                                        |
+| ------------------------------------------------------ | ------ | ------------------------------------------- |
+| [MouseDelayFix](https://sk1er.club/mods/mousedelayfix) | :e:    | :pvp: (Crucial 1.8.9 hitreg fix)            |
+| [Patcher](https://sk1er.club/mods/patcher)             | :e:    | :mc: (Fixes hundreds of vanilla 1.8.9 bugs) |
+| [OldAnimations](https://sk1er.club/mods/oldanimations) | :e:    | :pvp: (Brings 1.7 animations to 1.8.9)      |
+| [Replay Mod](https://www.replaymod.com/)               | :e:    | Recording competitive gameplay for clips.   |
 
-### PvP & Utilities
+### Performance (Fabric 1.21+)
 
-| Mod Name                                               | Source | Type                           |
-| ------------------------------------------------------ | ------ | ------------------------------ |
-| [MouseDelayFix](https://sk1er.club/mods/mousedelayfix) | :e:    | :pvp: 1.8.9 input fix          |
-| [Replay Mod](https://www.replaymod.com/)               | :e:    | Recording gameplay for content |
-| [AppleSkin](https://modrinth.com/mod/appleskin)        | :mr:   | Saturation/Hunger HUD          |
+| Mod Name                                             | Source | Type                                     |
+| ---------------------------------------------------- | ------ | ---------------------------------------- |
+| [Sodium](https://modrinth.com/mod/sodium)            | :mr:   | :fab: (The king of FPS optimization)     |
+| [Starlight](https://modrinth.com/mod/starlight)      | :mr:   | :fab: (Rewritten light engine)           |
+| [FerriteCore](https://modrinth.com/mod/ferrite-core) | :mr:   | :fab: (Reduces memory usage drastically) |
 
 :::
 
-::: details Mod Aggregators
 
-- [Modrinth](https://modrinth.com/mods) :mr: (Preferred for Fabric)
-- [CurseForge](https://www.curseforge.com/minecraft/search?class=mc-mods) :cf: (Legacy Forge standard)
-- [SkyClient](https://skyclient.club/) (Automated SkyBlock mod installer)
-  :::
 
-## Trackers & Stats
+## Official & Technical
 
-### Player Stats
+### Network Resources
 
-- [SkyCrypt](https://sky.shiiyu.moe/) :s::api: (Best for SkyBlock profile viewing)
-- [Mathemaniac](https://mathemaniac.org/) (Weight and progression calculators)
-- [Plancke](https://plancke.io/) (General Hypixel stats and guild info)
-- [HyStats](https://hystats.net/) (Player growth and leaderboard tracking)
+- [Hypixel Store](https://store.hypixel.net/) -> Ranks and boosters.
+- [Official Wiki](https://wiki.hypixel.net/) -> The source of truth for game mechanics.
+- [Server Status](https://status.hypixel.net/) -> Live check for maintenance or outages.
+- [Hypixel API](https://api.hypixel.net/) -> For developers building their own tools.
 
-::: details Economy & Data {open}
-
-- [Bazaar Tracker](https://bazaartracker.com/) :bz: (Real-time flips and trends)
-- [Coflnet](https://sky.coflnet.com/) :ah: (Auction House history and flipping)
-- [Hypixel SkyBlock Wiki](https://wiki.hypixel.net/Main_Page) :wiki: (Official database)
-- [SkyBlock Simplified (SBS)](https://discord.gg/sbs) :d: (Economy bot and splashes)
-  :::
-
-### Direct Download (Mods/Assets)
-
-::: details Symbols
-
-- GitHub Release -> :gh:
-- Modrinth Host -> :mr:
-- CurseForge Host -> :cf:
-- Nightly Build -> :n:
-- Needs API Key -> :api:
-  :::
-
-| Category        | Source                                                                   |
-| --------------- | ------------------------------------------------------------------------ |
-| **Mod Loaders** | [MultiMC](https://multimc.org/) (Advanced instance management)           |
-| ^^              | [Prism Launcher](https://prismlauncher.org/) (FOSS - Highly Recommended) |
-| **API Proxies** | [Hypixel API](https://api.hypixel.net/) :api:                            |
-| ^^              | [Slothpixel](https://slothpixel.me/) (Cleaner API wrapper)               |
-
----
-
-# Texture Packs
-
-<br>
-
-::: danger Compatibility Warning
-Ensure your texture pack matches your game version. Using 1.8.9 packs on 1.21 will cause "Broken Texture" errors in your HUD.
+::: tip Connection Issues
+If you are experiencing high latency from Europe or Asia, try using **Cloudflare WARP** or check **IsHypixelDown.com** to see if the issue is server-side.
 :::
-
-::: info Content Note
-Hypixel texture packs are usually split between **PvP (Short swords/Low fire)** and **SkyBlock (Custom item CIT)**.
-:::
-
-## PvP & SkyBlock Packs
-
-| Pack Name                                             | Source | Focus                                    |
-| ----------------------------------------------------- | ------ | ---------------------------------------- |
-| [FurfSky Reborn](https://furfsky.net/)                | :s:    | :rp: Essential for SkyBlock custom items |
-| [Tightfault](https://packs.gg/pack/tightfault-revamp) | :pvp:  | High-FPS Bedwars/Duels pack              |
-| [Looshy Packs](https://looshy.moe/)                   | :pvp:  | Modern aesthetic PvP packs               |
-| [Vanilla Tweaks](https://vanillatweaks.net/)          | :mc:   | Modular QoL textures for 1.21            |
-
-::: details More Sources
-| Source | Type |
-|--------|------|
-| [Planet Minecraft](https://www.planetminecraft.com/texture-packs/) | :rp: Community submissions |
-| [PvP.land](https://pvp.land/packs) | :pvp: Competitive pack gallery |
-| [Mc-Assets](https://mc-assets.net/) | :mc: Raw game files for pack makers |
-:::
-
----
-
-# Communities & Media
-
-## Forums & Socials
-
-| Category      | Platform                                                             |
-| ------------- | -------------------------------------------------------------------- |
-| **Official**  | [Hypixel Forums](https://hypixel.net/forums/) :foru:                 |
-| ^^            | [Hypixel Support](https://support.hypixel.net/) :help:               |
-| **Community** | [r/Hypixel](https://www.reddit.com/r/hypixel/) :red:                 |
-| ^^            | [r/HypixelSkyblock](https://www.reddit.com/r/HypixelSkyblock/) :red: |
-| **Media**     | [Hypixel YouTube](https://www.youtube.com/user/Hypixel) :yt:         |
-
----
-
-# Official Links
-
-## Store & Legal
-
-- [Hypixel Store](https://store.hypixel.net/) (Ranks, Boosters, Bundles)
-- [Mojang Support](https://help.minecraft.net/) (Account issues)
-- [Hypixel Rules](https://hypixel.net/rules) :no: (Read to avoid bans)
-
-::: info Region Support
-The Hypixel server is currently hosted in North America (Chicago), but uses a global CDN for initial connection. If you have high ping, consider using the **Cloudflare WARP** utility.
-:::
-
-::: details Utility Sites
-
-- [Namemc](https://namemc.com/) (Check skin history and name availability)
-- [IsHypixelDown?](https://ishypixeldown.com/) (Server status check)
-- [SkyCrypt Status](https://sky.shiiyu.moe/status) (API status check)
-  :::

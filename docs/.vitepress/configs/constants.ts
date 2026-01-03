@@ -9,79 +9,70 @@ export const nav: DefaultTheme.NavItem[] = [];
 export const sidebar: DefaultTheme.Sidebar = [
   // --- CORE SECTIONS ---
   {
-    text: '<span class="i-lucide:zap"></span> Quick Start',
-    link: "/quick-start",
-  },
-  {
-    text: '<span class="i-lucide:alert-circle"></span> Safety Guide',
-    link: "/safety-guide",
-  },
-  {
-    text: '<span class="i-lucide:globe"></span> Websites',
-    link: "/websites",
-  },
-  {
-    text: '<span class="i-lucide:box"></span> Modpacks',
-    link: "/modpacks",
-  },
-
-  // --- GAME MODES ---
-  {
-    text: '<span class="i-lucide:sword"></span> Skyblock',
+    text: '<span class="i-lucide:achor"></span> Getting Started',
     collapsed: false,
-    link: "/skyblock",
-    items: [
-      { text: "General Tools", link: "/skyblock/tools" },
-      { text: "Dungeons", link: "/skyblock/dungeons" },
-      { text: "Mining & Farming", link: "/skyblock/skills" },
-      { text: "Slayers", link: "/skyblock/slayers" },
-      { text: "Solvers", link: "/skyblock/solvers" },
-    ],
-  },
-  {
-    text: '<span class="i-lucide:swords"></span> PvP Games',
-    collapsed: true,
-    link: "/pvp",
-    items: [
-      { text: "Bedwars", link: "/pvp/bedwars" },
-      { text: "Duels", link: "/pvp/duels" },
-      { text: "Skywars", link: "/pvp/skywars" },
-      { text: "The Pit", link: "/pvp/pit" },
-    ],
-  },
-  {
-    text: '<span class="i-lucide:hammer"></span> Arcade & Classic',
-    collapsed: true,
-    link: "/arcade",
-    items: [
-      { text: "TNT Games", link: "/arcade/tnt" },
-      { text: "Murder Mystery", link: "/arcade/murder-mystery" },
-      { text: "Housing", link: "/arcade/housing" },
-    ],
-  },
-
-  // --- MODDING & CLIENTS ---
-  {
-    text: '<span class="i-lucide:settings-2"></span> Mods & Clients',
-    collapsed: true,
-    link: "/mods",
+    link: "/getting-started",
     items: [
       {
-        text: "Fabric Mods",
+        text: '<span class="i-lucide:zap"></span> Quick Start',
+        link: "/quick-start",
+      },
+      {
+        text: '<span class="i-lucide:globe"></span> Websites',
+        link: "/websites",
+      },
+      {
+        text: '<span class="i-lucide:shield"></span> Safety Guide',
+        link: "/safety-guide",
+      },
+      {
+        text: '<span class="i-lucide:circle-question-mark"></span> FAQ',
+        link: "/faq",
+      },
+    ],
+  },
+  // --- GAME MODES ---
+  {
+    text: '<span class="i-lucide:swords"></span> Gamemodes',
+    collapsed: false,
+    items: [
+      { text: "Skyblock", link: "/game/skyblock" },
+      { text: "Bedwars", link: "/game/bedwars" },
+      { text: "The Pit", link: "/game/pit" },
+    ],
+  },
+  // {
+  //   text: '<span class="i-lucide:hammer"></span> Arcade & Classic',
+  //   collapsed: false,
+  //   link: "/arcade",
+  //   items: [
+  //     { text: "TNT Games", link: "/arcade/tnt" },
+  //     { text: "Murder Mystery", link: "/arcade/murder-mystery" },
+  //     { text: "Housing", link: "/arcade/housing" },
+  //   ],
+  // },
+
+  // --- CLIENTS ---
+  {
+    text: '<span class="i-lucide:hammer"></span> Tools',
+    collapsed: false,
+    items: [
+      {
+        text: "Resource Packs",
         collapsed: true,
         items: [
-          { text: "Optimization", link: "/mods/fabric/optimization" },
-          { text: "QoL Features", link: "/mods/fabric/qol" },
-          { text: "HUDs", link: "/mods/fabric/huds" },
+          { text: "Essential Packs", link: "/tools/essential-packs" },
+          { text: "Skyblock Packs", link: "/tools/skyblock-packs" },
+          { text: "PvP Packs", link: "/tools/pvp-packs" },
         ],
       },
       {
-        text: "Forge Mods (1.8.9)",
+        text: "Mods",
         collapsed: true,
         items: [
-          { text: "Essential Mods", link: "/mods/forge/essential" },
-          { text: "Skyblock Addons", link: "/mods/forge/sba" },
-          { text: "PVP Enhancements", link: "/mods/forge/pvp" },
+          { text: "Essential Mods", link: "/mods/essential" },
+          { text: "Skyblock", link: "/mods/skyblock" },
+          { text: "PVP Enhancements", link: "/mods/pvp" },
         ],
       },
       {
@@ -93,8 +84,27 @@ export const sidebar: DefaultTheme.Sidebar = [
           { text: "Multi-MC / Prism", link: "/clients/launchers" },
         ],
       },
+      {
+        text: "Discord Bots",
+        collapsed: true,
+        link: "/discord-bots",
+      }
     ],
   },
+
+  // --- Community ---
+
+  {
+    text: '<span class="i-lucide:messages-square"></span> Community',
+    collapsed: true,
+    items: [
+      { text: "Forums & Subreddits", link: "/community/forums" },
+      { text: "Discord Servers", link: "/community/discords" },
+      { text: "YouTube Channels", link: "/community/youtube" },
+      { text: "Twitch Streamers", link: "/community/twitch" },
+    ],
+  },
+
 
   // --- GUIDES & KNOWLEDGE ---
   {
@@ -154,23 +164,14 @@ export const sidebar: DefaultTheme.Sidebar = [
   {
     text: '<span class="i-lucide:code-2"></span> Developers',
     collapsed: true,
-    link: "/dev",
+    link: "/developer",
     items: [
-      { text: "Public API", link: "/dev/api" },
-      { text: "Modding Resources", link: "/dev/modding" },
-      { text: "Chat Triggers", link: "/dev/chattriggers" },
+      { text: "Hypixel API", link: "/developer/hypixel-api" },
+      { text: "Build HyDocs", link: "/developer/build" },
     ],
   },
 
   // --- MISC ---
-  {
-    text: '<span class="i-lucide:bar-chart-3"></span> Stats & Leaderboards',
-    link: "/stats",
-  },
-  {
-    text: '<span class="i-lucide:messages-square"></span> Discords & Comm',
-    link: "/community",
-  },
   {
     text: '<span class="i-lucide:heart-handshake"></span> Credits',
     link: "/credits",

@@ -4,11 +4,9 @@ description: Guide to help users protect themselves from threat within Hypixel.
 customDescription: Guide to help users protect themselves from threat within Hypixel. This guide has two parts first being safety on Hypixel itself and second being how to stay safe while playing Hypixel Skyblock gamemode
 ---
 
-This guide explores the how you (yes, you!) can use to protect yourself from threats and malware and have a safe experience on hypixel!
-
-
 ## Part 1: Hypixel network
-These threats are not limited to a single gamemode but network-wide considerations every hypixel player should understand.
+
+This guide explores the how you (yes, you!) can use to protect yourself from threats and malware and have a safe and fun experience on hypixel!
 
 ### 1.1 Third-Party Links
 
@@ -54,7 +52,7 @@ Use these tools to inspect suspicious links, files, or mods before downloading o
 | [RatRater2](https://ktibow.github.io/RatRater2/) | Community tool and dataset for RAT identification and classification. |
 | [Sky Coflnet Mod List (scroll down)](https://sky.coflnet.com/mod) | By the developer of COFL mod. |
 
-::: info Note
+::: tip Note
 Always scan any downloaded executable or mod before running it, and never bypass Hypixel's allowed-mod rules for the sake of convenience.
 :::
 
@@ -94,7 +92,10 @@ Inviting a player to your SkyBlock Island is the digital equivalent of giving th
 -   **Irreversible Access:** Co-op members have **full access** to your island, chests, bank, and all collectibles. A malicious co-op can strip an island clean in minutes.
 -   **The Invitation Scam:** Scammers may befriend you or offer "help" with the sole goal of being invited to your island to steal. **Only co-op with people you know and trust in real life or have trusted for a very long time.**
 -   **Shared Responsibility & Wipes:** As the profile owner, **you are responsible for the actions of your co-op members**. If they cheat, abuse bugs, or engage in coin trading, **your entire profile is subject to punishment and wipe**. Your voluntary choice to invite them carries this inherent risk.
--   **Profile Recovery:** Hypixel support **does not** restore items or coins lost due to a co-op member's theft. This is considered a voluntary sharing of access.
+
+::: info **Profile Recovery:**
+Hypixel support **does not** typically restore items or coins lost due to a co-op member's theft. This is considered a voluntary sharing of access.
+:::
 ---
 ### 2.2 SkyBlock-Specific Scams
 
