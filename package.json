@@ -12,7 +12,7 @@
     "api:dev": "nitropack dev",
     "api:build": "nitropack build",
     "api:preview": "node .output/server/index.mjs",
-    "og:dev": "x-satori -t ./docs/.vitepress/theme/components/OgImageTemplate.vue -c ./docs/.vitepress/hooks/satoriConfig.ts --dev"
+    "og:dev": "x-satori -t ./docs/.vitepress/theme/components/OgImageTemplate.vue -c ./docs/.vitepress/configs/hooks/satoriConfig.ts --dev"
   },
   "dependencies": {
     "@fmhy/components": "^0.0.3",

@@ -3,12 +3,21 @@ import {
   customStorageEventName,
   useEventListener,
   useStorage,
+  useThrottleFn,
 } from "@vueuse/core";
 import { usePreferredReducedMotion } from "@vueuse/core";
 import { useData, useRoute } from "vitepress";
 import type { DefaultTheme as Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
-import { computed, onMounted, onUnmounted, ref, nextTick, provide, watch } from "vue";
+import {
+  computed,
+  onMounted,
+  onUnmounted,
+  ref,
+  nextTick,
+  provide,
+  watch,
+} from "vue";
 import { sidebar } from "../configs/constants";
 import AnnouncementPill from "./components/AnnouncementPill.vue";
 import NotFoundComponent from "./components/NotFound.vue";
@@ -19,7 +28,7 @@ import {
 import SidebarCard from "./components/SidebarCard.vue";
 import { McBeeStorageKey } from "./constants";
 import { v2add, v2mag, v2norm, v2smul, v2sub, type Vec2D } from "./math";
-import { op } from './composables/op'
+import { op } from "./composables/op";
 const route = useRoute();
 const { Layout } = DefaultTheme;
 
@@ -27,15 +36,41 @@ interface BreadcrumbItem {
   text: string;
   link?: string;
 }
+const trackedDepths = ref<number[]>([]);
+
 watch(
   () => route.path,
   (path) => {
-    op.track('page_view', { path })
-  }
-)
+    op.track("page_view", { path });
+    trackedDepths.value = [];
+  },
+);
+
+const handleScroll = useThrottleFn(() => {
+  if (typeof window === "undefined") return;
+
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight;
+  const winHeight = window.innerHeight;
+  const scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
+
+  const milestones = [25, 50, 75, 90];
+
+  milestones.forEach((milestone) => {
+    if (
+      scrollPercent >= milestone &&
+      !trackedDepths.value.includes(milestone)
+    ) {
+      trackedDepths.value.push(milestone);
+      op.track("scroll_depth", { depth: milestone, url: route.path });
+    }
+  });
+}, 200);
+
+useEventListener(window, "scroll", handleScroll);
 const buildBreadcrumbs = (
   items: Theme.SidebarItem[],
-  currentPath: string
+  currentPath: string,
 ): BreadcrumbItem[] => {
   for (const item of items) {
     // Check if this item matches the current path
@@ -153,7 +188,6 @@ const reloadMcBee = () => {
     McBeeDisable.value = null;
   };
 };
-
 
 onMounted(() => {
   if (import.meta.env.SSR) return;

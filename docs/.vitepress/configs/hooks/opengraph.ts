@@ -19,7 +19,7 @@ export async function generateImages(config: SiteConfig) {
   }).load();
   const template = await readFile(
     resolve(__dirname, "../../theme/components/OgImageTemplate.vue"),
-    "utf-8"
+    "utf-8",
   );
 
   const fonts: SatoriOptions["fonts"] = [
@@ -95,15 +95,15 @@ async function generateImage({
     props: {
       title:
         frontmatter.layout === "home"
-          ? frontmatter.hero.name ?? frontmatter.title
-          : frontmatter.customMetaTitle ?? frontmatter.title,
+          ? (frontmatter.hero.name ?? frontmatter.title)
+          : (frontmatter.customMetaTitle ?? frontmatter.title),
       description:
         frontmatter.layout === "home"
-          ? frontmatter.hero.tagline ?? frontmatter.description
+          ? (frontmatter.hero.tagline ?? frontmatter.description)
           : frontmatter.description,
       image:
         frontmatter.og?.image ??
-        "https://cdn.imgchest.com/files/e2c8cc54a3f5.png",
+        "https://cdn.imgchest.com/files/2987fd41ba7f.png",
     },
   };
 

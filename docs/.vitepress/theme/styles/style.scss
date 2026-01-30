@@ -43,14 +43,14 @@ $ease-in-expo: cubic-bezier(0.7, 0, 0.84, 0);
   );
 
   /* Colors: Button */
-  --vp-button-brand-bg: var(--vp-c-brand-1);
+  --vp-button-brand-bg: var(--vp-c-brand-2);
   --vp-button-brand-border: var(--vp-c-brand-soft);
-  --vp-button-brand-text: rgba(42, 40, 47);
+  --vp-button-brand-text: #ffffff;
   --vp-button-brand-hover-border: var(--vp-c-brand-soft);
-  --vp-button-brand-hover-text: rgba(42, 40, 47);
-  --vp-button-brand-hover-bg: var(--vp-c-brand-soft);
+  --vp-button-brand-hover-text:  #ffffff;
+  --vp-button-brand-hover-bg: var(--vp-c-brand-3);
   --vp-button-brand-active-border: var(--vp-c-brand-soft);
-  --vp-button-brand-active-text: rgba(42, 40, 47);
+  --vp-button-brand-active-text: #ffffff;
   --vp-button-brand-active-bg: var(--vp-button-brand-bg);
   --vp-button-alt-bg: #484848;
   --vp-button-alt-text: #f0eeee;

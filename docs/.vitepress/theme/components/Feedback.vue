@@ -19,8 +19,10 @@ const sluggify = (text: string) =>
     .replace(/(^-+|-+$)/g, "")
     .substring(0, 60);
 
-const getURL = (heading: string) =>
-  `https://hydocs.github.io${withBase(router.route.path)}#${sluggify(heading)}`;
+const getURL = (heading?: string) => {
+  const base = `https://hydocs.github.io${withBase(router.route.path)}`;
+  return heading ? `${base}#${sluggify(heading)}` : base;
+};
 
 const prompts = [
   "Help us improve the network!",
@@ -57,18 +59,23 @@ const router = useRouter();
 const feedback = reactive<
   Pick<FeedbackType, 'message' | 'page'> & Partial<Pick<FeedbackType, 'type'>>
 >({
-  page: getURL(props.heading!),
+  page: getURL(props.heading), // Changed from props.heading!
   message: ''
 })
 
 const selectedOption = ref(feedbackOptions[0]);
 
-async function handleSubmit(type?: FeedbackType["type"]) {
-  if (type) {
-    feedback.type = type;
-    selectedOption.value = getFeedbackOption(type)!;
-  }
+function selectOption(type: FeedbackType["type"]) {
+  feedback.type = type;
+  selectedOption.value = getFeedbackOption(type)!;
+}
+
+async function handleSubmit() {
   loading.value = true;
+  error.value = null; // Clear previous errors
+
+  // Recalculate page URL just in case route changed (though component likely remounts)
+  // feedback.page = getURL(props.heading);
 
   const body: FeedbackType = {
     message: feedback.message,
@@ -76,6 +83,8 @@ async function handleSubmit(type?: FeedbackType["type"]) {
     page: feedback.page,
     ...(props.heading && { heading: props.heading }),
   };
+
+  console.log("Submitting feedback:", JSON.stringify(body, null, 2));
 
   try {
     const response = await fetch("https://hydocs.pixelman.workers.dev", {
@@ -95,7 +104,9 @@ async function handleSubmit(type?: FeedbackType["type"]) {
       success.value = true;
     }
   } catch (err) {
-    error.value = err;
+    console.error("Feedback submission error:", err);
+    error.value =
+      err instanceof Error ? err.message : "An unknown error occurred";
   } finally {
     loading.value = false;
   }
@@ -153,7 +164,7 @@ const toggleCard = () => (isCardShown.value = !isCardShown.value);
               v-for="item in feedbackOptions"
               :key="item.value"
               class="bg-bg border-$vp-c-default-soft hover:border-primary mt-2 select-none rounded border-2 border-solid font-bold transition-all duration-250 rounded-lg text-[14px] font-500 leading-normal m-0 px-3 py-1.5 text-center align-middle whitespace-nowrap"
-              @click="handleSubmit(item.value)"
+              @click="selectOption(item.value)"
             >
               <span>{{ item.label }}</span>
             </button>
@@ -196,6 +207,9 @@ const toggleCard = () => (isCardShown.value = !isCardShown.value);
               Discord.
             </a>
           </p>
+          <div v-if="error" class="mb-2 text-sm text-red-500">
+            Error: {{ error }}
+          </div>
           <div class="flex flex-row gap-2">
             <button
               class="bg-$vp-c-default-soft text-primary border-$vp-c-default-soft inline-flex h-7 items-center justify-center whitespace-nowrap rounded-md border-2 border-solid px-1.5 py-3.5 text-sm font-medium transition-all duration-300 sm:h-6"
@@ -206,10 +220,10 @@ const toggleCard = () => (isCardShown.value = !isCardShown.value);
             <button
               type="submit"
               class="border border-div rounded-lg transition-colors duration-250 inline-block text-14px font-500 leading-1.5 px-3 py-3 text-center align-middle whitespace-nowrap disabled:opacity-50 text-text-2 bg-swarm-100 dark:bg-swarm-700 border-swarm-800 dark:border-swarm-700 disabled:bg-swarm-100 dark:disabled:bg-swarm-900 hover:border-swarm-900 dark:hover:border-swarm-800 hover:bg-swarm-200 dark:hover:bg-swarm-800"
-              :disabled="isDisabled"
+              :disabled="isDisabled || loading"
               @click="handleSubmit()"
             >
-              Send Feedback 📩
+              {{ loading ? "Sending..." : "Send Feedback 📩" }}
             </button>
           </div>
         </div>
@@ -226,7 +240,9 @@ const toggleCard = () => (isCardShown.value = !isCardShown.value);
   border: 1px solid var(--vp-c-divider);
   background-color: var(--vp-c-bg);
   border-radius: 8px;
-  transition: border-color 0.25s, background-color 0.25s;
+  transition:
+    border-color 0.25s,
+    background-color 0.25s;
   display: inline-block;
   font-size: 14px;
   font-weight: 500;

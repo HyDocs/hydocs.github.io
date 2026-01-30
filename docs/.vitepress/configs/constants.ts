@@ -159,7 +159,6 @@ export const sidebar: DefaultTheme.Sidebar = [
         items: [
           { text: "Anti-Ratting Guide", link: "/guides/technical/security" },
           { text: "Discord Bot", link: "/guides/technical/discord" },
-          { text: "Mobile (Pojav Launcher)", link: "/guides/technical/pojav" },
           { text: "User Scripts", link: "/guides/technical/scripts" },
         ],
       },
@@ -205,7 +204,7 @@ export const siteConfig = {
   appearance: true,
   titleTemplate: ":title • hydocs.github.io by as280093",
   head: [
-    ["meta", { name: "theme-color", content: "#7378eb" }],
+    ["meta", { name: "theme-color", content: "#554ff6" }],
     ["meta", { name: "og:type", content: "website" }],
     ["meta", { name: "og:locale", content: "en" }],
     ["link", { rel: "icon", href: "/asset/logosmall.png" }],
@@ -217,7 +216,7 @@ export const siteConfig = {
     ["link", { rel: "alternate icon", href: "/asset/logosmall.png" }],
     [
       "link",
-      { rel: "mask-icon", href: "/asset/logosmall.png", color: "#7378eb" },
+      { rel: "mask-icon", href: "/asset/logosmall.png", color: "#554ff6" },
     ],
     // prettier-ignore
     [
@@ -232,9 +231,26 @@ export const siteConfig = {
       "link",
       {
         rel: "apple-touch-icon",
-        href: "/asset/logosmall.webp",
+        href: "/asset/logosmall.png",
         sizes: "192x192",
       },
+    ],
+    [
+      "style",
+      {},
+      `
+          @font-face {
+            font-family: 'Pacifico';
+            src: url('/fonts/Pacifico-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-display: swap;
+          }
+          @font-face {
+            font-family: 'Source Serif 4 Variable';
+            src: url('/fonts/SourceSerif4-VariableFont_opsz,wght.ttf') format('truetype');
+            font-display: swap;
+          }
+        `,
     ],
   ],
   srcExclude: ["README.md", "sandbox/**/*.md"],

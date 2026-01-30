@@ -40,6 +40,7 @@ export default defineSatoriConfig({
     title: "Lorem ipsum dolor sit amet, qui minim labore adipisicing",
     description:
       "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+    image: "https://cdn.imgchest.com/files/2987fd41ba7f.png",
     dir: "/j",
   },
 });

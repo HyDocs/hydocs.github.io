@@ -12,7 +12,7 @@ export const FeedbackSchema = z.object({
   ]),
   page: z.string().url(),
   // For heading based feedback
-  heading: z.string().min(3).max(20).optional(),
+  heading: z.string().min(3).max(100).optional(),
 });
 
 export interface Option {
@@ -45,7 +45,7 @@ export const feedbackOptions: Option[] = [
 ];
 
 export function getFeedbackOption(
-  value: FeedbackType["type"]
+  value: FeedbackType["type"],
 ): Option | undefined {
   return feedbackOptions.find((option) => option.value === value);
 }

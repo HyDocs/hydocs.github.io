@@ -12,3 +12,6 @@ dist
 .eslintcache
 # There should be only pnpm-lock.yaml for faster builds on Pages
 package-lock.json
+
+# Local scripts
+scripts/
