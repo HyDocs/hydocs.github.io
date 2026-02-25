@@ -19,14 +19,14 @@ export function generateMeta(context: TransformContext, hostname: string) {
   // console.info({ filePath });
   const url = `${hostname}/${relativePath.replace(
     /((^|\/)index)?\.md$/,
-    "$2"
+    "$2",
   )}`;
 
   head.push(
     ["link", { rel: "canonical", href: url }],
     ["meta", { property: "og:url", content: url }],
     ["meta", { name: "twitter:url", content: url }],
-    ["meta", { name: "twitter:card", content: "summary_large_image" }]
+    ["meta", { name: "twitter:card", content: "summary_large_image" }],
   );
 
   if (frontmatter.theme) {
@@ -42,18 +42,18 @@ export function generateMeta(context: TransformContext, hostname: string) {
       "meta",
       {
         property: "og:description",
-        content: frontmatter.customDescription ?? frontmatter.description,
+        content: frontmatter.customDescription ?? frontmatter.description ?? "",
       },
     ],
     [
       "meta",
       {
         name: "twitter:description",
-        content: frontmatter.customDescription ?? frontmatter.description,
+        content: frontmatter.customDescription ?? frontmatter.description ?? "",
       },
     ],
-    ["meta", { property: "og:title", content: frontmatter.title }],
-    ["meta", { name: "twitter:title", content: frontmatter.title }]
+    ["meta", { property: "og:title", content: frontmatter.title ?? "" }],
+    ["meta", { name: "twitter:title", content: frontmatter.title ?? "" }],
   );
 
   if (frontmatter.image) {
@@ -87,7 +87,7 @@ export function generateMeta(context: TransformContext, hostname: string) {
     head.push(["meta", { property: "og:image:type", content: "image/png" }]);
     head.push([
       "meta",
-      { property: "og:image:alt", content: frontmatter.title },
+      { property: "og:image:alt", content: frontmatter.title ?? "" },
     ]);
     head.push([
       "meta",
@@ -97,7 +97,7 @@ export function generateMeta(context: TransformContext, hostname: string) {
     head.push(["meta", { name: "twitter:image:height", content: "530" }]);
     head.push([
       "meta",
-      { name: "twitter:image:alt", content: frontmatter.title },
+      { name: "twitter:image:alt", content: frontmatter.title ?? "" },
     ]);
   }
 

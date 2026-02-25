@@ -14,7 +14,6 @@ const sections = [
         icon: "i-twemoji-glowing-star",
         label: "Featured Resource / Essential",
       },
-      { icon: "i-mdi-puzzle", label: "Mod / Extension" },
       { icon: "i-material-symbols-science", label: "Nightly / Alpha Build" },
       { icon: "i-material-symbols-feedback", label: "Feedback / Bug Report" },
       { icon: "i-twemoji-check-mark-button", label: "Yes / Supported" },
@@ -26,15 +25,21 @@ const sections = [
       { icon: "i-ic-round-looks-two", label: "Alternative Version" },
       { icon: "i-material-symbols-help", label: "Help / Docs / Guides" },
       { icon: "i-mdi-arrow-right-bold", label: "More Info / Related" },
+      { icon: "i-material-symbols-info", label: "Info / Note" },
     ],
   },
   {
     title: "System",
     items: [
       { icon: "i-mdi-minecraft", label: "Minecraft (Base Game)" },
-      { icon: "i-simple-icons-windows", label: "Windows / Forge" },
+      { icon: "i-simple-icons-windows", label: "Windows / PC" },
       { icon: "i-simple-icons-linux", label: "Linux" },
       { icon: "i-simple-icons-apple", label: "macOS" },
+      { icon: "i-mdi-web", label: "Web / Browser" },
+      {
+        icon: "i-material-symbols-terminal-rounded",
+        label: "Command Line / Terminal",
+      },
     ],
   },
   {
@@ -46,11 +51,24 @@ const sections = [
     ],
   },
   {
+    title: "Content & Packs",
+    items: [
+      { icon: "i-mdi-puzzle", label: "Mod / Extension" },
+      { icon: "i-material-symbols-package-2-outline", label: "Modpack" },
+      { icon: "i-mdi-texture-box", label: "Resource Pack" },
+      { icon: "i-material-symbols-texture", label: "Texture Pack" },
+    ],
+  },
+  {
     title: "Price",
     items: [
       { icon: "i-ic-round-money-off-csred", label: "Completely Free" },
-      { icon: "i-mdi-cash-lock", label: "Free (Contains paid content)" },
+      {
+        icon: "i-ic-round-add-shopping-cart",
+        label: "Free (Contains paid content)",
+      },
       { icon: "i-ic-round-attach-money", label: "Paid / Premium Only" },
+      { icon: "i-akar-icons-coin", label: "In-Game Coins Required" },
       { icon: "i-ic-round-currency-exchange", label: "Subscription Based" },
       { icon: "i-simple-icons-patreon", label: "Patreon Supported" },
     ],
@@ -58,9 +76,14 @@ const sections = [
   {
     title: "Source",
     items: [
-      { icon: "i-simple-icons-github", label: "GitHub (Source Code)" },
+      { icon: "i-simple-icons-github", label: "GitHub (Repository)" },
       { icon: "i-simple-icons-modrinth", label: "Modrinth" },
       { icon: "i-simple-icons-curseforge", label: "CurseForge" },
+      {
+        icon: "i-mdi-package-variant",
+        label: "Open Source / Source Available",
+      },
+      { icon: "i-mdi-package-variant-closed-remove", label: "Closed Source" },
       { icon: "i-mdi-forum", label: "Hypixel Forums" },
       { icon: "i-mdi-book-open-variant", label: "Wiki / Fandom" },
     ],
@@ -69,20 +92,53 @@ const sections = [
     title: "Social",
     items: [
       { icon: "i-simple-icons-discord", label: "Discord Server" },
-      { icon: "i-simple-icons-twitter", label: "Twitter / X" },
+      { icon: "i-simple-icons-x", label: "Twitter / X" },
       { icon: "i-simple-icons-reddit", label: "Reddit Community" },
       { icon: "i-simple-icons-youtube", label: "YouTube Channel" },
+      { icon: "i-simple-icons-facebook", label: "Facebook" },
+      { icon: "i-simple-icons-instagram", label: "Instagram" },
+      { icon: "i-simple-icons-telegram", label: "Telegram" },
+      { icon: "i-material-symbols-mail", label: "Email / Contact" },
     ],
   },
   {
-    title: "Others",
+    title: "Minecraft 1.21+",
+    items: [
+      { icon: "i-mdi-hammer", label: "Mace Weapon" },
+      { icon: "i-mdi-weather-windy", label: "Breeze / Wind Charge" },
+      { icon: "i-mdi-hammer-wrench", label: "Crafter" },
+      { icon: "i-mdi-key-variant", label: "Trial / Ominous Vaults" },
+      { icon: "i-mdi-shield-half-full", label: "Wolf Armor / Armadillo" },
+    ],
+  },
+  {
+    title: "Hypixel SkyBlock",
+    items: [
+      { icon: "i-mdi-chart-line", label: "Bazaar" },
+      { icon: "i-mdi-gavel", label: "Auction House" },
+      { icon: "i-mdi-sword", label: "Combat Skill" },
+      { icon: "i-mdi-pickaxe", label: "Mining" },
+      { icon: "i-lucide-wheat", label: "Farming" },
+      { icon: "i-mdi-pine-tree", label: "Foraging" },
+      { icon: "i-mdi-fish", label: "Fishing" },
+      { icon: "i-mdi-skull", label: "Slayer" },
+      { icon: "i-mdi-castle", label: "Dungeons" },
+      { icon: "i-mdi-skull-crossbones", label: "Kuudra" },
+      { icon: "i-twemoji-cyclone", label: "The Rift" },
+      { icon: "i-mdi-shield-account", label: "Guilds" },
+      { icon: "i-mdi-dice-multiple", label: "RNGesus" },
+    ],
+  },
+  {
+    title: "Gameplay & Tools",
     items: [
       { icon: "i-material-symbols-api", label: "Uses Hypixel API" },
       { icon: "i-mdi-sword-cross", label: "PvP Tools / Mods" },
-      { icon: "i-mdi-chart-line", label: "Bazaar Data" },
-      { icon: "i-mdi-gavel", label: "Auction House Tools" },
-      { icon: "i-mdi-sword", label: "Combat Skill" },
-      { icon: "i-mdi-skull", label: "Slayer Content" },
+      { icon: "i-mdi-chart-bar", label: "Stats / Analytics" },
+      {
+        icon: "i-material-symbols-person-add",
+        label: "Account / Login Required",
+      },
     ],
   },
 ];

@@ -9,7 +9,7 @@ export const nav: DefaultTheme.NavItem[] = [];
 export const sidebar: DefaultTheme.Sidebar = [
   // --- CORE SECTIONS ---
   {
-    text: '<span class="i-lucide:achor"></span> Getting Started',
+    text: '<span class="i-lucide:anchor"></span> Getting Started',
     collapsed: false,
     link: "/getting-started",
     items: [

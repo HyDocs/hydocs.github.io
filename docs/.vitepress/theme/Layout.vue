@@ -67,7 +67,9 @@ const handleScroll = useThrottleFn(() => {
   });
 }, 200);
 
-useEventListener(window, "scroll", handleScroll);
+if (typeof window !== "undefined") {
+  useEventListener(window, "scroll", handleScroll);
+}
 const buildBreadcrumbs = (
   items: Theme.SidebarItem[],
   currentPath: string,

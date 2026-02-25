@@ -1,4 +1,11 @@
-import posthog from "posthog-js";
+import { inBrowser } from "vitepress";
+
+let posthog: any;
+if (inBrowser) {
+  import("posthog-js").then((module) => {
+    posthog = module.default;
+  });
+}
 
 export type TrackHandlerPayload = any;
 export type TrackPayload = {
@@ -23,24 +30,24 @@ export class InternalAPI {
   ready() {}
 
   async track(name: string, properties?: TrackProperties) {
-    posthog.capture(name, properties);
+    if (inBrowser && posthog) posthog.capture(name, properties);
   }
 
   async identify(payload: IdentifyPayload) {
-    if (payload.profileId) {
+    if (inBrowser && posthog && payload.profileId) {
       posthog.identify(payload.profileId, payload.properties);
     }
   }
 
   setGlobalProperties(properties: Record<string, unknown>) {
-    posthog.register(properties);
+    if (inBrowser && posthog) posthog.register(properties);
   }
 
   clear() {
-    posthog.reset();
+    if (inBrowser && posthog) posthog.reset();
   }
   async alias(payload: AliasPayload) {
-    posthog.alias(payload.alias, payload.profileId);
+    if (inBrowser && posthog) posthog.alias(payload.alias, payload.profileId);
   }
 
   async increment(payload: IncrementPayload) {}

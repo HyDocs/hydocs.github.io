@@ -60,9 +60,21 @@ const aliases: Record<string, string> = {
   cbt: "mdi-sword",
   for: "mdi-pine-tree",
   min: "mdi-pickaxe",
-  far: "mdi-hoe",
+  far: "lucide-wheat",
   fsh: "mdi-fish",
   slay: "mdi-skull",
+  dungeon: "mdi-castle",
+  kuudra: "mdi-skull-crossbones",
+  rift: "twemoji-cyclone",
+  guild: "mdi-shield-account",
+  rng: "mdi-dice-multiple",
+
+  // MC 1.21+
+  mace: "mdi-hammer",
+  wind: "mdi-weather-windy",
+  craft: "mdi-hammer-wrench",
+  key: "mdi-key-variant",
+  armor: "mdi-shield-half-full",
 
   // Source & Community
   gh: "simple-icons-github",
@@ -73,10 +85,11 @@ const aliases: Record<string, string> = {
   d: "simple-icons-discord",
   red: "simple-icons-reddit",
   yt: "simple-icons-youtube",
-  x: "simple-icons-twitter",
+  x: "simple-icons-x",
   f: "simple-icons-facebook",
   insta: "simple-icons-instagram",
   tele: "simple-icons-telegram",
+  email: "material-symbols-mail",
   foru: "mdi-forum",
   wiki: "mdi-book-open-variant",
   pat: "simple-icons-patreon",
@@ -98,6 +111,7 @@ const aliases: Record<string, string> = {
   alt: "ic-round-looks-two", // Alternative
   s: "twemoji-glowing-star", // Featured
   global: "twemoji-globe-showing-asia-australia", // Global
+  info: "material-symbols-info", // Info
 
   // Price
   paid: "ic-round-attach-money",

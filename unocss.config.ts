@@ -22,7 +22,7 @@ const safelist = Object.entries(colors).flatMap(([group, shades]) =>
   Object.keys(shades).flatMap((shade) => [
     `text-${group}-${shade}`,
     `bg-${group}-${shade}`,
-  ])
+  ]),
 );
 
 export default defineConfig({
@@ -93,7 +93,7 @@ export default defineConfig({
         "vertical-align": "middle",
         "min-width": "1.2rem",
       },
-      warn: true,
+      warn: false,
       collections: {
         custom: FileSystemIconLoader(resolve(__dirname, "docs/public/custom")),
         inline: customIcons,

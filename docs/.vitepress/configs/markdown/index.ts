@@ -43,8 +43,8 @@ function renderInlineTooltip(md: MarkdownRenderer) {
         span(md.renderInline(cont)) +
         "<template v-slot:popper>" +
         md.renderInline(hint) +
-        "</template></VTooltip>"
-    )
+        "</template></VTooltip>",
+    ),
   );
 }
 
@@ -61,19 +61,19 @@ function renderTooltip(md: MarkdownRenderer) {
       const title = item.frontmatter.title
         ? `title="${item.frontmatter.title}"`
         : item.id
-        ? `title="${item.id}"`
-        : ""; /** Impossible */
+          ? `title="${item.id}"`
+          : ""; /** Impossible */
       const props = icon + title;
       const renderedContent = md.render(item.content);
 
       return `<Tooltip ${props}>` + renderedContent + "</Tooltip>";
-    })
+    }),
   );
 }
 
 function span(
   content: string,
-  attrs: Record<string, unknown> | undefined = undefined
+  attrs: Record<string, unknown> | undefined = undefined,
 ) {
   let html = "<span";
   if (attrs) {
