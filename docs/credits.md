@@ -27,8 +27,8 @@ import Credits from './.vitepress/theme/components/Contributors.vue'
 
 #### Current Assets
 
-| Artist / Studio | Art              | Used as           |
-| --------------- | ---------------- | ----------------- |
-| SAMPLE          | [SAMPLE](SAMPLE) | [SAMPLE](/SAMPLE) |
+| Artist / Studio | Art              | Used as |
+| --------------- | ---------------- | ------- |
+| SAMPLE          | [SAMPLE](SAMPLE) |         |
 
 :::

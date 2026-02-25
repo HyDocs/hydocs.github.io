@@ -66,10 +66,17 @@ const aliases: Record<string, string> = {
 
   // Source & Community
   gh: "simple-icons-github",
+  src: "mdi-package-variant",
+  cs: "mdi-package-variant-closed-remove",
+
+  // Social
   d: "simple-icons-discord",
   red: "simple-icons-reddit",
   yt: "simple-icons-youtube",
   x: "simple-icons-twitter",
+  f: "simple-icons-facebook",
+  insta: "simple-icons-instagram",
+  tele: "simple-icons-telegram",
   foru: "mdi-forum",
   wiki: "mdi-book-open-variant",
   pat: "simple-icons-patreon",
@@ -95,7 +102,7 @@ const aliases: Record<string, string> = {
   // Price
   paid: "ic-round-attach-money",
   free: "ic-round-money-off-csred",
-  fp: "mdi-cash-lock", // Free site with paid content/features
+  fp: "ic-round-add-shopping-cart", // Free site with paid content/features
   sub: "ic-round-currency-exchange",
   coin: "akar-icons-coin",
 
@@ -164,7 +171,7 @@ export function movePlugin(
   plugins: { name: string }[],
   pluginAName: string,
   order: "before" | "after",
-  pluginBName: string
+  pluginBName: string,
 ) {
   const pluginBIndex = plugins.findIndex((p) => p.name === pluginBName);
   if (pluginBIndex === -1) return;

@@ -152,10 +152,11 @@ Tooltips: Always place tooltip keys at the absolute end of the line.
 
 | Icon   | Code     | Description                  |
 | ------ | -------- | ---------------------------- |
-| :free: | `:free:` | Completely Free              |
-| :fp:   | `:fp:`   | Free (Contains paid content) |
 | :paid: | `:paid:` | Paid / Premium Only          |
 | :sub:  | `:sub:`  | Subscription Based           |
+| :free: | `:free:` | Completely Free              |
+| :fp:   | `:fp:`   | Free (Contains paid content) |
+| :coin: | `:coin:` | Coin / Point                 |
 | :pat:  | `:pat:`  | Patreon Supported            |
 
 == Source
@@ -163,6 +164,8 @@ Tooltips: Always place tooltip keys at the absolute end of the line.
 | Icon   | Code     | Description          |
 | ------ | -------- | -------------------- |
 | :gh:   | `:gh:`   | GitHub (Source Code) |
+| :src:  | `:src:`  | Source Code          |
+| :cs:   | `:cs:`   | Closed Source        |
 | :mr:   | `:mr:`   | Modrinth             |
 | :cf:   | `:cf:`   | CurseForge           |
 | :foru: | `:foru:` | Hypixel Forums       |

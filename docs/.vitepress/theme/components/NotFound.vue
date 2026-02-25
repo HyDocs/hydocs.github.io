@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-// Set a fixed image size
-const imageSize = ref("550px"); // Fixed size for the image
+const imageSize = ref("550px");
 </script>
 
 <template>
-  <div class="flex min-h-[calc(100vh-4rem)] items-center justify-center p-4">
+  <div
+    class="flex min-h-[calc(100vh-4rem)] max-h-screen items-center justify-center p-4 overflow-hidden"
+  >
     <div class="text-center">
       <img
         :style="{ width: imageSize, height: 'auto' }"
@@ -14,34 +15,48 @@ const imageSize = ref("550px"); // Fixed size for the image
         alt="404 Image"
         class="mx-auto"
       />
-      <p class="text-title-lg mt-4 font-bold leading-tight text-white">404</p>
       <p
-        class="text-body-lg flex flex-wrap items-center justify-center leading-snug text-gray-400"
+        class="text-[1.25rem] sm:text-[1.5rem] mt-4 font-bold leading-tight text-white"
       >
-        Umm.... You've been sent to Limbo!
-        <span class="icon-container mx-1">
-          //TODO:ADD sad image
-          <!--img class="icon-img" src="/asset/sad.png" alt="Sad Icon" /-->
-        </span>
-        It looks like this page has vanished into the void. If you got here from
-        a link, please click
-        <span class="icon-container mx-1">
-          <svg
-            class="w-icon h-icon inline-block align-text-bottom"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-          >
-            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-            <path d="m22 7l-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-          </svg>
-        </span>
-        to report it.
+        404
       </p>
+
+      <div
+        class="mt-3 text-sm sm:text-base text-gray-400 leading-snug space-y-2 break-words"
+      >
+        <p class="flex flex-wrap items-center justify-center gap-2">
+          Umm.... You've been sent to Limbo!
+          <img
+            class="h-[1.25em] w-auto"
+            src="/asset/sadjerry.webp"
+            alt="Sad Icon"
+          />
+        </p>
+
+        <p>It looks like this page has vanished into the void.</p>
+
+        <p class="flex flex-wrap items-center justify-center gap-1.5">
+          If you got here from a link, please click
+          <span
+            class="inline-flex items-center text-gray-300 hover:text-white cursor-pointer transition-colors"
+          >
+            <svg
+              class="h-[1.25em] w-[1em]"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+              <path d="m22 7l-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+          </span>
+          to report it.
+        </p>
+      </div>
     </div>
   </div>
 </template>
