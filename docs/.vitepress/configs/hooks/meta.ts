@@ -27,6 +27,8 @@ export function generateMeta(context: TransformContext, hostname: string) {
     ["meta", { property: "og:url", content: url }],
     ["meta", { name: "twitter:url", content: url }],
     ["meta", { name: "twitter:card", content: "summary_large_image" }],
+    ["meta", { name: "twitter:site", content: "@HyDocs" }],
+    ["meta", { name: "twitter:creator", content: "@HyDocs" }],
   );
 
   if (frontmatter.theme) {
@@ -124,6 +126,35 @@ export function generateMeta(context: TransformContext, hostname: string) {
       },
     ]);
   }
+
+  const schema: Record<string, any> = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: frontmatter.title || "HyDocs",
+    description:
+      frontmatter.customDescription ??
+      frontmatter.description ??
+      "HyDocs is the ultimate community-driven index for Hypixel. Find safe mods, usefull websites links, and essential tools for SkyBlock, and PvP.",
+    url: url,
+    publisher: {
+      "@type": "Organization",
+      name: "HyDocs Community",
+      logo: {
+        "@type": "ImageObject",
+        url: `${hostname}/asset/logosmall.png`,
+      },
+    },
+  };
+
+  if (lastUpdated) {
+    schema.dateModified = new Date(lastUpdated).toISOString();
+  }
+
+  head.push([
+    "script",
+    { type: "application/ld+json" },
+    JSON.stringify(schema),
+  ]);
 
   return head;
 }

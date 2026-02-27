@@ -11,9 +11,11 @@ outline: [1, 2]
 
 ## Trackers
 
-| Resource                                                                                                   | Social                               | Source                                     |
-| :--------------------------------------------------------------------------------------------------------- | :----------------------------------- | :----------------------------------------- |
-| [SkyCrypt](https://sky.shiiyu.moe/) :s: ^[:api:](Uses a player's username to fetch SkyBlock profile data.) | [:d:](https://discord.gg/cNgADv2kEQ) | [:gh:](https://github.com/SkyCryptWebsite) |
+| Resource                                      | Link                                                                                                             | Social                               | Source                                     |
+| :-------------------------------------------- | :--------------------------------------------------------------------------------------------------------------- | :----------------------------------- | :----------------------------------------- |
+| SkyCrypt                                      | [Main Site](https://sky.shiiyu.moe/) :s: ^[:api:](Requires a username to fetch SkyBlock profile data.)           | [:d:](https://discord.gg/cNgADv2kEQ) | [:gh:](https://github.com/SkyCryptWebsite) |
+| SkyKings ^[:fp:](contains some paid contents) | [Profile Stats](https://skykings.net/profilestats) ^[:api:](Requires a username to fetch SkyBlock profile data.) | [:d:](https://discord.gg/skykings)   | ^[:cs:](Closed source)                     |
+| ^^                                            | [Guild Leaderboard](https://skykings.net/leaderboard)                                                            | ^^                                   | ^^                                         |
 
 ## Calendars
 
@@ -39,6 +41,7 @@ outline: [1, 2]
 | ^^               | [Price Drop Detector](https://skyblocktools.dev/flux) ^[:paid:](paid) :acc:                                                                                  | ^^                                                                        | ^^                                                                         |
 | ^^               | [Craft Profit Calculator](https://skyblocktools.dev/craftprofit) ^[:paid:](paid) :acc:                                                                       | ^^                                                                        | ^^                                                                         |
 | ^^               | [Bazaar Flip Analyzer](https://skyblocktools.dev/items) ^[:fp:](contains some paid contents)                                                                 | ^^                                                                        | ^^                                                                         |
+| SkyKings         | [Bazzar Tracker](https://skykings.net/bazaar) ^[:free:](free)                                                                                                | [:d:](https://discord.gg/skykings)                                        | ^[:cs:](Closed source)                                                     |
 
 ## Minions
 
@@ -99,6 +102,7 @@ outline: [1, 2]
 | ^^            | [Farming XP Calculator](https://skyblocktools.dev/farming-xp-calculator) :fp: :cs:         | ^^                                                                                                                                        | ^^                                                 |
 | ^^            | [Farming Profit Calculator](https://skyblocktools.dev/farming-profit-calculator) :fp: :cs: | ^^                                                                                                                                        | ^^                                                 |
 | Adjectils     | [Milestones Milestones Calculator](https://adjectils.com/garden.html)                      | [:d:](https://discord.gg/NvQTDDrnSd) ^[:api:](Uses a player's username to fetch SkyBlock profile data.)                                   | [:gh:](https://github.com/adjectiven0un/adjectils) |
+| SkyKings      | [Compost Calculator](https://skykings.net/tools/compost-calculator)                        | [:d:](https://discord.gg/skykings)                                                                                                        | ^[:cs:](Closed source)                             |
 
 ## Greenhouse
 

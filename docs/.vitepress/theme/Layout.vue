@@ -41,9 +41,10 @@ const trackedDepths = ref<number[]>([]);
 watch(
   () => route.path,
   (path) => {
-    op.track("page_view", { path });
+    op.track("$pageview", { path });
     trackedDepths.value = [];
   },
+  { immediate: true },
 );
 
 const handleScroll = useThrottleFn(() => {

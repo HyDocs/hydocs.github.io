@@ -21,6 +21,7 @@ export function configureMarkdown(md: MarkdownRenderer) {
   md.use(tabsMarkdownPlugin);
   md.use(imgSize);
   md.use(headersPlugin);
+  md.use(attrs);
   md.use(MdMTables, {
     multiline: true,
     rowspan: true,
@@ -28,7 +29,6 @@ export function configureMarkdown(md: MarkdownRenderer) {
     multibody: true,
     aotolabel: true,
   });
-  md.use(attrs);
   renderTooltip(md);
   renderInlineTooltip(md);
   md.use(markdownSteps);

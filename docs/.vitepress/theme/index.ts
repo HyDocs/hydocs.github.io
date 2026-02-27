@@ -9,10 +9,12 @@ import { enhanceAppWithTabs } from "vitepress-plugin-tabs/client";
 import "@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css";
 import "@nolebase/vitepress-plugin-page-properties/client/style.css";
 import "@nolebase/vitepress-plugin-git-changelog/client/style.css";
+import "@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css";
 import "floating-vue/dist/style.css";
 import Authors from "./components/Authors.vue";
 import Tooltip from "./components/Tooltip.vue";
 import { createMediumZoomProvider } from "./composables/medium-zoom";
+import { NolebaseEnhancedReadabilitiesPlugin } from "./components/settings";
 import "virtual:uno.css";
 import Feedback from "./components/Feedback.vue";
 import Layout from "./Layout.vue";
@@ -47,6 +49,7 @@ export default {
     app.component("Tooltip", Tooltip);
     app.component("Feedback", Feedback);
     createMediumZoomProvider(app, router);
+    app.use(NolebaseEnhancedReadabilitiesPlugin);
     // @ts-expect-error
     app.use(NolebaseGitChangelogPlugin, {
       commitsRelativeTime: true,
@@ -109,7 +112,7 @@ export default {
             ],
           },
         },
-      ]
+      ],
     );
   },
 } satisfies Theme;

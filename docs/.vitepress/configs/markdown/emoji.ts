@@ -55,6 +55,7 @@ const aliases: Record<string, string> = {
 
   // Economy & Gameplay
   bz: "mdi-chart-line",
+  iman: "mdi-iron",
   ah: "mdi-gavel",
   pvp: "mdi-sword-cross", // Added for PvP-specific mods/tools
   cbt: "mdi-sword",
@@ -68,6 +69,28 @@ const aliases: Record<string, string> = {
   rift: "twemoji-cyclone",
   guild: "mdi-shield-account",
   rng: "mdi-dice-multiple",
+
+  // Hypixel Mini-Games
+  bw: "mdi-bed",
+  sw: "mdi-cloud",
+  sb: "mdi-island",
+  mm: "mdi-knife",
+  ag: "lucide-gamepad-2",
+  uhc: "lucide-apple",
+  arena: "mdi-yin-yang",
+  bb: "lucide-hammer",
+  cvc: "lucide-crosshair",
+  duels: "lucide-swords",
+  mw: "lucide-brick-wall",
+  pb: "lucide-paint-bucket",
+  qc: "mdi-lightning-bolt",
+  bsg: "mdi-sword-cross",
+  sh: "mdi-alpha-v-box",
+  tnt: "lucide-bomb",
+  tkr: "mdi-go-kart",
+  vz: "mdi-bat",
+  walls: "mdi-wall",
+  wl: "mdi-flag",
 
   // MC 1.21+
   mace: "mdi-hammer",
@@ -88,7 +111,9 @@ const aliases: Record<string, string> = {
   x: "simple-icons-x",
   f: "simple-icons-facebook",
   insta: "simple-icons-instagram",
+  ltbox: "simple-icons-letterboxd",
   tele: "simple-icons-telegram",
+  tiktok: "simple-icons-tiktok",
   email: "material-symbols-mail",
   foru: "mdi-forum",
   wiki: "mdi-book-open-variant",
@@ -120,13 +145,19 @@ const aliases: Record<string, string> = {
   sub: "ic-round-currency-exchange",
   coin: "akar-icons-coin",
 
+  // Clients
+  lunar: "icons-lunar", // Lunar Client
+  lion: "icons-lion", // BadLion Client
+  feather: "icons-feather", // FeatherMC Client
+
   // Others
-  feed: "material-symbols-feedback", // Added Feedback
+  feed: "material-symbols-feedback", // Feedback
   more: "mdi-arrow-right-bold", // More Info
   api: "material-symbols-api",
   stst: "mdi-chart-bar",
   acc: "material-symbols-person-add",
   help: "material-symbols-help",
+  techno: "icons-technoblade",
 };
 // Custom icons using UnoCSS inline collection
 const customIconAliases: Record<string, string> = {

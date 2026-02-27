@@ -205,6 +205,7 @@ export const siteConfig = {
   titleTemplate: ":title • hydocs.github.io by as280093",
   head: [
     ["meta", { name: "theme-color", content: "#554ff6" }],
+    ["meta", { property: "og:site_name", content: "HyDocs" }],
     ["meta", { name: "og:type", content: "website" }],
     ["meta", { name: "og:locale", content: "en" }],
     ["link", { rel: "icon", href: "/asset/logosmall.png" }],
@@ -224,7 +225,7 @@ export const siteConfig = {
       {
       name: 'keywords',
       content:
-        'Hypixel, Skyblock, Hypixel Skyblock, Minecraft, Minecraft Mods, Skyblock Addons, Skyblock Solvers, Dungeons, Bedwars, Duels, PvP, Clients, Lunar Client, Badlion, Fabric, Forge, Optifine, Sodium, Resource Packs, Texture Packs, SkyCrypt, HyDocs, Wiki, Skytils, NEU, ChatTriggers'
+        'Hypixel, Skyblock, Hypixel Skyblock, Minecraft, Minecraft Mods, Skyblock Addons, Dungeons, Bedwars, Duels, PvP, Clients, Lunar Client, Badlion, Fabric, Forge, Optifine, Sodium, Resource Packs, Texture Packs, SkyCrypt, HyDocs, Wiki, Skytils, NEU, ChatTriggers'
     }
     ],
     [
