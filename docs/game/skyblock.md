@@ -84,7 +84,7 @@ outline: [1, 2]
 | ^^                                                 | [Inferno Demonlord](https://adjectils.com/crimson.html)                      |                  ^^                  |                                        ^^                                         |
 | ^^                                                 | [Riftstalker Bloodfiend & Motes](https://adjectils.com/rift.html)            |                  ^^                  |                                        ^^                                         |
 | Skyblocktools ^[:fp:](contains some paid contents) | [Diana Profit Calculator](https://skyblocktools.dev/diana-profit-calculator) |                 :no:                 |                              ^[:cs:](Closed source)                               |
-| JaGH's                                             | [Damage Calculator](https://ugly-guy.github.io/damageCalculator/)            |                 :no:                 | ^[:gh:]https://github.com/Ugly-Guy/Ugly-Guy.github.io/tree/main/damageCalculator) |
+| JaGH's                                             | [Damage Calculator](https://ugly-guy.github.io/damageCalculator/)            |                 :no:                 | ^[:gh:](https://github.com/Ugly-Guy/Ugly-Guy.github.io/tree/main/damageCalculator) |
 
 ## Discords
 
