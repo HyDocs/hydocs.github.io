@@ -9,6 +9,23 @@ outline: [1, 2]
 
 # General
 
+## WIKI
+
+| Resource                                                                                                                       | Social                                                                                                                                                                                                                                                   |
+| :----------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Skyblock Fandom](https://hypixel-skyblock.fandom.com/wiki/Hypixel_SkyBlock_Wiki) :s: ^[:global:](Supports multiple languages) | :no:                                                                                                                                                                                                                                                     |
+| [Official Hypixel Skyblock Wiki](https://wiki.hypixel.net/Main_Page)                                                           | [:d:](https://discord.gg/Hypixel) [:f:](https://www.facebook.com/Hypixel) [:insta:](https://instagram.com/hypixelofficial) [:tiktok:](https://tiktok.com/@hypixel) [:x:](https://twitter.com/HypixelNetwork)[:yt:](https://www.youtube.com/user/Hypixel) |
+
+## Forums
+
+| Resource         | Link                                                                                       | Social                                                                                                                                                                                                                                                   | Source                 |
+| :--------------- | :----------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- |
+| Official Hypixel | [SkyBlock General Discussion](https://hypixel.net/forums/skyblock-general-discussion.157/) | [:d:](https://discord.gg/Hypixel) [:f:](https://www.facebook.com/Hypixel) [:insta:](https://instagram.com/hypixelofficial) [:tiktok:](https://tiktok.com/@hypixel) [:x:](https://twitter.com/HypixelNetwork)[:yt:](https://www.youtube.com/user/Hypixel) | ^[:cs:](Closed source) |
+| ^^               | [Guides and Strategies](https://hypixel.net/forums/guides-and-strategies.162/)             | ^^                                                                                                                                                                                                                                                       | ^^                     |
+| ^^               | [Island Showcase](https://hypixel.net/forums/island-showcase.161/)                         | ^^                                                                                                                                                                                                                                                       | ^^                     |
+| ^^               | [SkyBlock Patch Notes](https://hypixel.net/forums/skyblock-patch-notes.158/)               | ^^                                                                                                                                                                                                                                                       | ^^                     |
+| ^^               | [Submitting Bug Reports](https://hypixel.net/forums/skyblock-bug-reports.159/)             | ^^                                                                                                                                                                                                                                                       | ^^                     |
+
 ## Trackers
 
 | Resource                                      | Link                                                                                                             | Social                               | Source                                     |
@@ -19,12 +36,13 @@ outline: [1, 2]
 
 ## Calendars
 
-| Resource                                                                | Social                               | Source                                                     |
-| :---------------------------------------------------------------------- | :----------------------------------- | :--------------------------------------------------------- |
-| [Skyblock Calendar](https://fschatbot.github.io/Skyblock-Calendar/) :s: | :no:                                 | [:gh:](https://github.com/fschatbot/Skyblock-Calendar)     |
-| [HypixelTools](https://hypixel.inventivetalent.org/skyblock-calendar/)  | :no:                                 | [:gh:](https://github.com/InventivetalentDev/HypixelTools) |
-| [Adjectils](https://adjectils.com/)                                     | [:d:](https://discord.gg/NvQTDDrnSd) | [:gh:](https://github.com/adjectiven0un/adjectils)         |
-| [HyMinions](https://hyminions.herokuapp.com/events)                     | [:d:](https://discord.gg/2KabAgsN6Y) | [:gh:](https://github.com/KidProf/hyminions)               |
+| Resource                                                                | Social                               | Source                                                                    |
+| :---------------------------------------------------------------------- | :----------------------------------- | :------------------------------------------------------------------------ |
+| [Skyblock Calendar](https://fschatbot.github.io/Skyblock-Calendar/) :s: | :no:                                 | [:gh:](https://github.com/fschatbot/Skyblock-Calendar)                    |
+| [HypixelTools](https://hypixel.inventivetalent.org/skyblock-calendar/)  | :no:                                 | [:gh:](https://github.com/InventivetalentDev/HypixelTools)                |
+| [Adjectils](https://adjectils.com/)                                     | [:d:](https://discord.gg/NvQTDDrnSd) | [:gh:](https://github.com/adjectiven0un/adjectils)                        |
+| [HyMinions](https://hyminions.herokuapp.com/events)                     | [:d:](https://discord.gg/2KabAgsN6Y) | [:gh:](https://github.com/KidProf/hyminions)                              |
+| [JaGH's Skyblock Calendar](https://ugly-guy.github.io/calendar/)        | :no:                                 | [:gh:](https://github.com/Ugly-Guy/Ugly-Guy.github.io/tree/main/calendar) |
 
 ## Economy & Bazaar
 
@@ -57,15 +75,16 @@ outline: [1, 2]
 
 ## Websites
 
-| Resource                                           | Links                                                                        |                Social                |                       Source                       |
-| :------------------------------------------------- | :--------------------------------------------------------------------------- | :----------------------------------: | :------------------------------------------------: |
-| Skyblocktools ^[:fp:](contains some paid contents) | [RNGesus Calculator](https://skyblocktools.dev/rngesus)                      |                                      |               ^[:cs:](Closed source)               |
-| Adjectils - RnGesus Calculator                     | [Revenant Horror & Sven Packmaster](https://adjectils.com/hub.html)          | [:d:](https://discord.gg/NvQTDDrnSd) | [:gh:](https://github.com/adjectiven0un/adjectils) |
-| ^^                                                 | [Tarantula Broodfather](https://adjectils.com/spider.html)                   |                  ^^                  |                         ^^                         |
-| ^^                                                 | [Dragons, Golems & Voidgloom Seraph](https://adjectils.com/end.html)         |                  ^^                  |                         ^^                         |
-| ^^                                                 | [Inferno Demonlord](https://adjectils.com/crimson.html)                      |                  ^^                  |                         ^^                         |
-| ^^                                                 | [Riftstalker Bloodfiend & Motes](https://adjectils.com/rift.html)            |                  ^^                  |                         ^^                         |
-| Skyblocktools ^[:fp:](contains some paid contents) | [Diana Profit Calculator](https://skyblocktools.dev/diana-profit-calculator) |                 :no:                 |               ^[:cs:](Closed source)               |
+| Resource                                           | Links                                                                        |                Social                |                                      Source                                       |
+| :------------------------------------------------- | :--------------------------------------------------------------------------- | :----------------------------------: | :-------------------------------------------------------------------------------: |
+| Skyblocktools ^[:fp:](contains some paid contents) | [RNGesus Calculator](https://skyblocktools.dev/rngesus)                      |                                      |                              ^[:cs:](Closed source)                               |
+| Adjectils - RnGesus Calculator                     | [Revenant Horror & Sven Packmaster](https://adjectils.com/hub.html)          | [:d:](https://discord.gg/NvQTDDrnSd) |                [:gh:](https://github.com/adjectiven0un/adjectils)                 |
+| ^^                                                 | [Tarantula Broodfather](https://adjectils.com/spider.html)                   |                  ^^                  |                                        ^^                                         |
+| ^^                                                 | [Dragons, Golems & Voidgloom Seraph](https://adjectils.com/end.html)         |                  ^^                  |                                        ^^                                         |
+| ^^                                                 | [Inferno Demonlord](https://adjectils.com/crimson.html)                      |                  ^^                  |                                        ^^                                         |
+| ^^                                                 | [Riftstalker Bloodfiend & Motes](https://adjectils.com/rift.html)            |                  ^^                  |                                        ^^                                         |
+| Skyblocktools ^[:fp:](contains some paid contents) | [Diana Profit Calculator](https://skyblocktools.dev/diana-profit-calculator) |                 :no:                 |                              ^[:cs:](Closed source)                               |
+| JaGH's                                             | [Damage Calculator](https://ugly-guy.github.io/damageCalculator/)            |                 :no:                 | ^[:gh:]https://github.com/Ugly-Guy/Ugly-Guy.github.io/tree/main/damageCalculator) |
 
 ## Discords
 
