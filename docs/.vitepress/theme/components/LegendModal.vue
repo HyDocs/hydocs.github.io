@@ -160,7 +160,6 @@ const sections = [
       { icon: "i-icons-lion", label: "Badlion Client" },
       { icon: "i-icons-feather", label: "FeatherMC Client" },
       { icon: "i-icons-lunar", label: "Lunar Client" },
-      ,
     ],
   },
   {
@@ -218,18 +217,19 @@ const sections = [
               <div
                 class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2"
               >
-                <div
-                  v-for="item in section.items"
-                  :key="item.label"
-                  class="flex flex-col items-center justify-center p-3 rounded-lg bg-$vp-c-bg-alt hover:bg-$vp-c-bg-elv transition-colors"
-                >
+                <template v-for="item in section.items" :key="item?.label">
                   <div
-                    :class="[item.icon, 'text-2xl mb-1 text-$vp-c-text-1']"
-                  />
-                  <div class="text-$vp-c-text-2 text-xs text-center">
-                    {{ item.label }}
+                    v-if="item"
+                    class="flex flex-col items-center justify-center p-3 rounded-lg bg-$vp-c-bg-alt hover:bg-$vp-c-bg-elv transition-colors"
+                  >
+                    <div
+                      :class="[item.icon, 'text-2xl mb-1 text-$vp-c-text-1']"
+                    />
+                    <div class="text-$vp-c-text-2 text-xs text-center">
+                      {{ item.label }}
+                    </div>
                   </div>
-                </div>
+                </template>
               </div>
             </div>
           </div>

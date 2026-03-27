@@ -19,10 +19,11 @@ outline: [1, 2]
 
 ## Trackers
 
-| Resource | Links                                             | Social                            | Source                               |
-| :------- | :------------------------------------------------ | :-------------------------------- | :----------------------------------- |
-| PitPanda | [Profile Stats](https://pitpanda.rocks/)          | [:d:](https://discord.gg/VbBr9en) | ^[:gh:](https://github.com/PitPanda) |
-| ^^       | [Leaderboard](https://pitpanda.rocks/leaderboard) | ^^                                | ^^                                   |
+| Resource | Links                                             | Social                               | Source                               |
+| :------- | :------------------------------------------------ | :----------------------------------- | :----------------------------------- |
+| PitPanda | [Profile Stats](https://pitpanda.rocks/)          | [:d:](https://discord.gg/VbBr9en)    | ^[:gh:](https://github.com/PitPanda) |
+| ^^       | [Leaderboard](https://pitpanda.rocks/leaderboard) | ^^                                   | ^^                                   |
+| PitMart  | [Leaderboard](https://pitmart.net/leaderboard)    | [:d:](https://discord.gg/4YBFyA6X7b) | ^[:cs:](Closed source)               |
 
 ## Calendars
 
@@ -35,5 +36,11 @@ outline: [1, 2]
 | Resource                                                  | Social | Source                                                 |
 | :-------------------------------------------------------- | :----- | :----------------------------------------------------- |
 | [adjectiven0un -Rewards Calculator](https://pitcalc.net/) | :no:   | [:gh:](https://github.com/adjectiven0un/pitcalculator) |
+
+## Trading
+
+| Resource                                                  | Social                               | Source                 |
+| :-------------------------------------------------------- | :----------------------------------- | :--------------------- |
+| [PitMart](https://pitmart.net/) ^[:info:](login required) | [:d:](https://discord.gg/4YBFyA6X7b) | ^[:cs:](Closed source) |
 
 <Feedback />
