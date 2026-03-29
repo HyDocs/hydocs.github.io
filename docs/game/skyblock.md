@@ -144,7 +144,7 @@ outline: [1, 2]
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----- | :--------------------------------------------- |
 | [SkyMutations.eu](https://skymutations.eu) :s:                                                                                                                                                                                                                   | :no:   | ^[:cs:](Closed source)                         |
 | [T0r0nt0.dev](https://www.t0r0nt0.dev/) ^[:api:](Uses a players username to fetch SkyBlock profile data.) ^[:info:](Uses Minecraft username to load users SkyBlock profile and pull in which mutations theyve unlocked. Requires player inventory API to be on.) | :no:   | ^[:cs:](Closed source)                         |
-| [Skyshards](https://greenhouse.skyshards.com/)                                                                                                                                                                                                                   | :no:   | [:gh:](https://github.com/Campionnn/SkyShards) |
+| [Skyshards](https://greenhouse.skyshards.com/) [:d:](https://discord.gg/QMseZUzJdK)                                                                                                                                                                              | :no:   | [:gh:](https://github.com/Campionnn/SkyShards) |
 
 ## Discords
 
@@ -216,7 +216,7 @@ We are still exploring the best tools and websites for this topic. If you know o
 
 ## Websites
 
-- [SkyShards](https://skyshards.com/) :s: [:gh:](https://github.com/Campionnn/SkyShards)
+- [SkyShards](https://skyshards.com/) :s: [:d:](https://discord.gg/QMseZUzJdK) [:gh:](https://github.com/Campionnn/SkyShards)
 - [ShardProfit -Shard Profit Calculator](https://www.shardprofit.xyz/) :cs:
 - [Skyblock Utilities - Shard Profit Calculator](https://sekki-minions.com/Shards) ^[:free:](free) ^[:cs:](Closed source)
 - [Google Docs - Shards](https://docs.google.com/spreadsheets/d/1lCWNzsl-6p_wFX6doQ4c7B0YpjUWY1nXCzWbIB3E9wI/edit?gid=0#gid=0)
@@ -275,5 +275,14 @@ We are still exploring the best tools and websites for this topic. If you know o
 | [SkyHelper](https://discord.gg/skyhelper)                              | :d: ^[:api:](Uses a players username to fetch SkyBlock profile data.) | Networth calculator and missing accessories.    |
 | [Neu(NotEnoughUpdates)](https://github.com/Moulberry/NotEnoughUpdates) | :gh: :frg:                                                            | The most complete item overlay mod.             |
 | [SkyBlocker](https://modrinth.com/mod/skyblocker)                      | :mr: :fab:                                                            | **1.21+** replacement for Neu/Skytils features. |
+
+# Cosmetics
+
+## Websites
+
+| Resource                                | Social                               | Source                                                 |
+| :-------------------------------------- | :----------------------------------- | :----------------------------------------------------- |
+| [SkySkins](https://skyskins.github.io/) | [:d:](https://discord.gg/QMseZUzJdK) | [:gh:](https://github.com/skyskins/skyskins.github.io) |
+| [SkyTrim](https://kamawarskrew.com/dye) | [:d:](https://discord.gg/QMseZUzJdK) | ^[:cs:](Closed source)                                 |
 
 <Feedback />
