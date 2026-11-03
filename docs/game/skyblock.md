@@ -33,6 +33,7 @@ outline: [1, 2]
 | SkyCrypt                                      | [Main Site](https://sky.shiiyu.moe/) :s: ^[:api:](Requires a username to fetch SkyBlock profile data.)           | [:d:](https://discord.gg/cNgADv2kEQ) | [:gh:](https://github.com/SkyCryptWebsite) |
 | SkyKings ^[:fp:](contains some paid contents) | [Profile Stats](https://skykings.net/profilestats) ^[:api:](Requires a username to fetch SkyBlock profile data.) | [:d:](https://discord.gg/skykings)   | ^[:cs:](Closed source)                     |
 | ^^                                            | [Guild Leaderboard](https://skykings.net/leaderboard)                                                            | ^^                                   | ^^                                         |
+| SkyBlock Atlas ^[:fp:](contains some paid contents) | [Profile Viewer](https://skyblockatlas.com/) ^[:api:](Requires a username to fetch SkyBlock profile data.) | [:d:](https://discord.gg/HMFAJMpU99) | ^[:cs:](Closed source) |
 
 ## Calendars
 
@@ -66,6 +67,9 @@ outline: [1, 2]
 | ^^                 | [Free Will Average Graph](https://sekki-minions.com/Ubik) ^[:free:](free)                                                                                    | ^^                                                                        | ^^                                                                         |
 | ^^                 | [Bit Craft Profit Calculator](https://sekki-minions.com/Bits) ^[:free:](free)                                                                                | ^^                                                                        | ^^                                                                         |
 | ^^                 | [Pet Level Calculator](https://sekki-minions.com/Pet)                                                                                                        | ^^                                                                        | ^^                                                                         |
+| SkyBlock Atlas | [Bazaar Flips](https://skyblockatlas.com/bazaar-flip-calculator) | [:d:](https://discord.gg/HMFAJMpU99) | ^[:cs:](Closed source) |
+| ^^ | [Auction Flips](https://skyblockatlas.com/auction-flip-calculator) | ^^ | ^^ |
+| ^^ | [Item Prices & History](https://skyblockatlas.com/item-search) | ^^ | ^^ |
 
 ## Minions
 
@@ -77,6 +81,7 @@ outline: [1, 2]
 | Minion Action House | [MinionAH](https://minionah.com/)                                                                                                           | [:d:](https://discord.minionah.com/) | [:gh:](https://github.com/DarthGigi/MinionAH) |
 | Skyblock Utilities  | [Minion Calculator](https://sekki-minions.com/Minions)                                                                                      |                 :no:                 |            ^[:cs:](Closed source)             |
 | ^^                  | [Inferno Minion Calculator](https://sekki-minions.com/Inferno)                                                                              |                  ^^                  |                      ^^                       |
+| SkyBlock Atlas | [Minion Calculator](https://skyblockatlas.com/minion-calculator) | [:d:](https://discord.gg/HMFAJMpU99) | ^[:cs:](Closed source) |
 
 ![](/banner/skyblock_combat.webp)
 
