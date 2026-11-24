@@ -50,6 +50,7 @@ Use these tools to inspect suspicious links, files, or mods before downloading o
 |------|-------------|
 | [IsThisARAT](https://isthisarat.com/) | Quickly check whether a sample or behavior matches known RAT indicators. |
 | [RatRater2](https://ktibow.github.io/RatRater2/) | Community tool and dataset for RAT identification and classification. |
+| [RatOrNot](https://ratornot.com/) | Free static scanner for Minecraft mod jars that checks for RATs and session or token stealers without running the file. |
 | [Sky Coflnet Mod List (scroll down)](https://sky.coflnet.com/mod) | By the developer of COFL mod. |
 
 ::: tip Note
